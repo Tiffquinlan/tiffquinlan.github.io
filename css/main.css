@@ -1,6 +1,16 @@
-header {
-    background-color: #565656;
+header, main, footer {
+    max-width: 700px;
+    margin: 0 auto;
 
+}
+
+header {
+    font-size: 18px;
+    background-color: #565656;
+}
+
+body{
+    font-size: 12px;
 }
 
 h1 {
