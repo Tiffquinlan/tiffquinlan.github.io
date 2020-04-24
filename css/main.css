@@ -2,22 +2,39 @@ header, main, footer {
     max-width: 700px;
     margin: 0 auto;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
 }
 
 header {
     font-size: 18px;
     background-color:#3a9cab;
+    border-radius: 15px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-top: 30px;
+
 }
+img {
+   width: 200px;
+   height: auto;
+   border-radius: 15px;
+   float: right;
+ }
 
 body{
-    font-size: 12px;
+    font-size: 16px;
 }
 
 h1 {
     color: #ededed
 }
 
-img {
-   width: 200px;
-   height: auto;
+
+footer {
+    background-color:#3a9cab;
+    border-radius: 15px;
+    text-align: center;
+    padding: 5px;
+    color: #ededed
+    
  }
