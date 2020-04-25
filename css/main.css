@@ -1,3 +1,25 @@
+
+/* unvisited link */
+a:link {
+  color: darkcyan;
+  text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+  color: darkblue;
+}
+/* mouse over link */
+a:hover {
+    color: firebrick;
+  }
+
+/* selected link */
+a:active {
+  color: green;
+}
+
+
 header, main, footer {
     max-width: 700px;
     margin: 0 auto;
@@ -14,7 +36,7 @@ header {
 }
 
 h1 {
-    color: #ededed;
+    color: white;
 }
 h2 {
     border-bottom: 1px solid rgb(0, 0, 0);
@@ -39,5 +61,6 @@ footer {
     border-radius: 10px;
     text-align: center;
     padding: 5px;
-    color: #ededed;
+    color: white;
+ 
  }
