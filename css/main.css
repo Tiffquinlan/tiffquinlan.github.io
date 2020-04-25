@@ -17,7 +17,7 @@ h1 {
     color: #ededed;
 }
 h2 {
-    border-bottom: 1px solid rgb(204, 178, 178);
+    border-bottom: 1px solid rgb(0, 0, 0);
     padding: 10px;
 }
 
@@ -25,8 +25,9 @@ img {
    width: 180px;
    height: auto;
    border-radius: 10px;
+   box-shadow: 5px 5px 7px grey;
    float: right;
-    box-shadow: 5px 5px 7px grey;
+
 }
 
 body{
