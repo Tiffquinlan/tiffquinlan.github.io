@@ -24,6 +24,7 @@ header, main, footer {
     max-width: 700px;
     margin: 0 auto;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
     padding: 10px;
     
 }
@@ -32,11 +33,13 @@ header {
     background-color:#3a9cab;
     border-radius: 10px;
     text-align: center;
-    margin-top: 30px;  
+    margin-top: 30px; 
+    border-style: groove;
 }
 
 h1 {
     color: white;
+    font-family: 'Acme', sans-serif;
 }
 h2 {
     border-bottom: 1px solid rgb(0, 0, 0);
@@ -62,5 +65,6 @@ footer {
     text-align: center;
     padding: 5px;
     color: white;
+    border-style: ridge;
  
  }

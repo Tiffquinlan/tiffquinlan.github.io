@@ -1,0 +1,15 @@
+@media only screan and (min-width: 1028px ){
+
+    main, nav, header, footer {max-width: 75rem; margin: auto;}
+
+    nav ul {padding-left: 2%}
+    nal li {width: auto}
+    nav a  {padding: 5rem 1rem};
+
+    main figure {width: 31}
+
+    div.news{
+        column-count: 3;
+    }
+
+}    /* end of media file */
