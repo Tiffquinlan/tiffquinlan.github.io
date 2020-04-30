@@ -13,7 +13,7 @@
     }
     /* header rules here */
     header {
-        background-color: #17a8e4;
+        background-color: #5ac794;
         padding: 1rem 2%;
     }
     header h1{
@@ -44,7 +44,7 @@
 
     }
     main h1{
-        color: #17a8e4;
+        color:#5ac794;
     }
     main figure img{width: 100%}
     main figure{
@@ -52,6 +52,12 @@
         margin: 0;
     }
     main figcaption {text-align: center; font-size: 2rem;}
+
+    footer{
+        background-color: #5ac794;
+        text-align: center;
+        padding: 15px;
+    }
 
     
 
