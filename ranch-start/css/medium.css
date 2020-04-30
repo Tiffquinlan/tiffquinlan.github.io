@@ -1,5 +1,6 @@
-@media only screan and (min-width: 560px ){
-   nav li{float: left; width: 25%}
+@media only screen and (min-width: 560px ){
+
+    nav li{float: left; width: 25%}
 
 
 main figure {
