@@ -1,0 +1,32 @@
+main {
+	height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+	/* align-items: center; */
+}
+
+/* In this case, the small viewport is the default css - no queries */
+main h2 {color: whitesmoke; margin:0;background-color: darkblue; padding: .5rem ; size: 14px;}
+
+
+/* 'medium' media query section */
+@media (min-width: 32.5em) {
+    main{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* 'large' media query section */
+@media (min-width: 64em) {
+    main{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+section { 
+    text-align: center;
+    margin-top: 10px auto; 
+    width: flex; 
+    background-color: whitesmoke;  
+    margin: 10px;
+}

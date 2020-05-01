@@ -1,0 +1,48 @@
+
+/* unvisited link */
+a:link {
+  color: darkblue;
+  text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+  color: darkblue;
+}
+/* mouse over link */
+a:hover {
+    color: goldenrod;
+  }
+
+/* selected link */
+a:active {
+  color: goldenrod;
+}
+
+
+header, main, footer {
+    max-width: 900px;
+    margin: 0 auto;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 10px;
+    
+}
+
+header {
+    background-color:slategrey;
+    text-align: center;
+    margin-top: 30px; 
+}
+
+h1 {
+    color: darkblue;
+    font-family: 'Acme', sans-serif;
+}
+
+
+img {
+   max-width: 250px;
+   height: auto;
+   border-radius: 10px;
+   box-shadow: 5px 5px 7px grey;
+}
