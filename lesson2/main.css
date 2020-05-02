@@ -1,17 +1,17 @@
 
 /* unvisited link */
 a:link {
-  color: darkblue;
+  color: cyan;
   text-decoration: none;
 }
 
 /* visited link */
 a:visited {
-  color: darkblue;
+  color: darkcyan;
 }
 /* mouse over link */
 a:hover {
-    color: goldenrod;
+    color: darkcyan;
   }
 
 /* selected link */
@@ -29,14 +29,19 @@ header, main, footer {
 }
 
 header {
-    background-color:slategrey;
+    background-color:#929292;
     text-align: center;
-    margin-top: 30px; 
+    margin-top: none; 
+  
 }
 
 h1 {
     color: darkblue;
     font-family: 'Acme', sans-serif;
+    font-size: 60px;
+}
+h2{
+  color: whitesmoke;
 }
 
 
@@ -45,4 +50,12 @@ img {
    height: auto;
    border-radius: 10px;
    box-shadow: 5px 5px 7px grey;
+}
+
+footer {
+  background-color:darkblue;
+  text-align: center;
+  padding: 5px;
+  color: white;
+
 }
