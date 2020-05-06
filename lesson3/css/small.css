@@ -85,7 +85,7 @@ main logo img{
 }
 main avatar img{
     float: right; 
-    width: 150px;
+    width: 100px;
     border-style: ridge;
     border-color: #20639B; 
     border-radius: 10px;

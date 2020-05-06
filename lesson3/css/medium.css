@@ -25,7 +25,10 @@ header h2{font-size: 1.5rem;}
 
 /*----------- MAIN --------------*/
 
+main avatar img{
+    width: 150px;
 
+}
 
 /*----------- FOOTER --------------*/
     
