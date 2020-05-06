@@ -34,10 +34,13 @@ body {
 header {
     background-color:#3CAEA3;
     color: black;
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 10px;
 }
 header img {float: left; width: 50px;}
 header h1 {margin: 0;font-size: 1.3rem;}
-header h2 {margin: 0; font-weight: normal;font-size: 1rem;}
+header h2 {margin: 0; font-weight: normal;font-size: .8rem;}
 
 /*----------- NAVIGATION --------------*/
 nav {
@@ -80,10 +83,33 @@ main img {
 main logo img{
     width: auto;
 }
+main avatar img{
+    float: right; 
+    width: 150px;
+    border-style: ridge;
+    border-color: #20639B; 
+    border-radius: 10px;
+    margin: 10px;
+}
 
 /*----------- SECTION --------------*/
 
-section img {float: right; width: 150px;}
+section{
+    
+    padding: 2px;
+    border-style: ridge;
+    border-color: #20639B;
+    border-radius: 5px;
+    background-color:#ED553B;
+    border-color: #20639B;
+    border-radius: 5px;
+}
+
+
+section img {
+    float: right; 
+    width: 150px; 
+}
 
 /*----------- FOOTER --------------*/
 footer {

@@ -16,10 +16,14 @@
 <body>
     <!-- HEADER HERE -->
     <header class="clearfix">
-        <img src="images/umbrella.png" alt="logo">
-        <h1>The Whether Man</h1>
-        <h2>whether there will be
-            weather</h2>
+
+        <img src="images/facelogo.png" alt="logo">
+        <slogan>
+            <h1>The Whether Man</h1>
+            <h2>tells you whether there will be
+                weather</h2>
+        </slogan>
+   
     </header>
 
 
@@ -38,10 +42,11 @@
     <main>
     
         <section>
-        <img src="images/wethermanlogo.png" alt="wether man">
-        <p>“I'm the Whether Man, not the Weather Man, for after all it's more important to know whether there will be
-            weather than what the weather will be.” ― Norton Juster, The Phantom Tollbooth</p>
+            <img src="images/wethermanlogo.png" alt="wether man">
+            <text>“I'm the Whether Man, not the Weather Man, for after all it's more important to know whether there will be
+            weather than what the weather will be.” ― Norton Juster, The Phantom Tollbooth</text>
         </section>
+        
         
         <h1>Site Name</h1>
         <p>thewetherman.com is avalible for this site</p>
@@ -54,16 +59,18 @@
   
         <h1>Logo</h1>
         <logo>
-            <img src="images/umbrella.png" alt="Logo">
+            <img src="images/facelogo.png" alt="Logo">
         </logo>
-        <p>from <a href=" https://www.iconfinder.com" target="_blank">Icon Finder</a></p>
+        <p>from <a href="https://avachara.com/avatar/" target="_blank">Avachara</a> avatar builder</p>
     </main>
 
     <footer>
-        &copy; 2020 | Tiffany Quinlan | <a href="https://tiffquinlan.github.io/" target="_blank">additional sites</a>
-        <p>Last Updated: <span id="last"></span></p>
+        &copy; <span id="year"></span> | Tiffany Quinlan |  <a href="https://www.byui.edu/online" target="_blank">BYUI Onlilne
+            Learning</a>
+        <p><span id="updated">Last Updated: <span id="lastupdated"></span></span></p>
     </footer>
     <script>
-        document.getElementById('last').textContent = document.lastModified;
+        document.getElementById('updated').textContent = document.lastModified;
     </script>
+    <script src="js/lastupdate.js"></script>
 </body>
