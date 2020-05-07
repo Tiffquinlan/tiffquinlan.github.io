@@ -11,14 +11,28 @@ html {
     box-sizing: border-box;
 }
 
-
 /* unvisited link */
 a:link {
-    /*pusdo state */
-    color: #ED553B;
+    color: #F6D55C;
     text-decoration: none;
-}
+  }
+  
+  /* visited link */
+  a:visited {
+    color: #F6D55C;
+  }
+  /* mouse over link */
+  a:hover {
+      color: #ED553B;
+    }
+  
+  /* selected link */
+  a:active {
+    color: #F6D55C;
+  }
 
+
+  
 
 /* ---- COLORS----- 
     Dark Blue   #173F5F
@@ -73,7 +87,7 @@ header h2 {
 
 /*----------- NAVIGATION --------------*/
 nav {
-    background-color: #20639B;
+    background-color: #173F5F;
     text-align: center;
 }
 
@@ -85,7 +99,7 @@ nav ul {
 
 nav ul li a {
     display: block;
-    color: #F6D55C;
+     color:#F6D55C;
     padding: .5rem 0;
     text-decoration: none;
     font-size: .9rem;
@@ -192,10 +206,13 @@ section img {
 
 /*----------- FOOTER --------------*/
 footer {
-    background-color: #20639B;
+    
+
+    
+    background-color: #173F5F;
     padding: .5rem 2%;
     text-align: center;
-    color: #F6D55C;
+    color: #f1f1f1;
 }
 
 
