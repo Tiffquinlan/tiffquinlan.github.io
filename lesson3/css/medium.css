@@ -1,5 +1,5 @@
-/* 35em is also 560px (if basefont is 16px) */
-@media only screen and (min-width: 35rem) {
+/* 35em is also 640px (if basefont is 16px) */
+@media only screen and (min-width: 40rem) {
 
 
 /*----------- BODY --------------*/
@@ -33,6 +33,19 @@ header h2{font-size: 1.2rem;}
 main avatar img{
     width: 150px;
 }
+
+
+.column {
+    float: left;
+    width: 50%;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
 
 
 /*----------- FOOTER --------------*/

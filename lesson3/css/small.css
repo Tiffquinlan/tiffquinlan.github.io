@@ -106,7 +106,6 @@ nav ul li.active a {
 main {
     padding: 5px;
     min-height: 10rem;
-
 }
 
 main img {
@@ -122,8 +121,8 @@ main avatar img {
     margin: 10px;
 }
 
-main logo img {
-    width: auto;
+main smpic img {
+    width: 8rem;
 }
 
 
@@ -162,27 +161,15 @@ main logo img {
   
   /* Style the front side (fallback if image is missing) */
   .flip-card-front {
-    background-color: #bbb;
+    background-color: #3CAEA3;
     color: black;
   }
   
   /* Style the back side */
   .flip-card-back {
-    background-color: dodgerblue;
+    background-color: #20639B;
     color: white;
     transform: rotateY(180deg);
-  }
-
-  .column {
-    float: left;
-    width: 50%;
-  }
-  
-  /* Clear floats after the columns */
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
   }
 
 
@@ -194,7 +181,7 @@ section {
     border-color: #20639B;
     border-radius: 5px;
     background-color: #ED553B;
-    border-color: #20639B;
+    color: white;
     border-radius: 5px;
 }
 
