@@ -50,7 +50,7 @@
 
         <div>
             <h1>Example</h1>
-            <p>sample page colors <a href="" target="_blank">click here</a></p>
+            <img src="images/color.png" alt="Color">
         </div>
     </main>
 
@@ -60,9 +60,12 @@
         &copy; <span id="year"></span> | Tiffany Quinlan | <a href="https://www.byui.edu/online" target="_blank">BYUI
             Onlilne
             Learning</a>
-        <p><span id="updated">Last Updated: <span id="lastupdated"></span></span></p>
+        <p>Last Updated: <span id="last"></span></p>
     </footer>
     <script>
+        var date = new Date();
+        var year = date.getFullYear();
+        document.getElementById('year').textContent = year;
         document.getElementById('last').textContent = document.lastModified;
     </script>
 </body>

@@ -46,16 +46,14 @@
         </avatar>
 
         <h1>Typography</h1>
-        <p>Text for the site</p>
-        <img src="images/text.png" alt="Text">
-
+        <p>Types of fonts used for the site</p>
+        
         <h1>Examples</h1>
         <h1> Header 1 </h1>
         <h2> Header 2 </h2>
         <h3> Header 3 </h3>
         <p> paragraph text </p>
 
-        <img src="images/clouds.jpg" alt="Clouds">
 
     </main>
 
@@ -63,9 +61,12 @@
         &copy; <span id="year"></span> | Tiffany Quinlan | <a href="https://www.byui.edu/online" target="_blank">BYUI
             Onlilne
             Learning</a>
-        <p><span id="updated">Last Updated: <span id="lastupdated"></span></span></p>
+        <p>Last Updated: <span id="last"></span></p>
     </footer>
     <script>
+        var date = new Date();
+        var year = date.getFullYear();
+        document.getElementById('year').textContent = year;
         document.getElementById('last').textContent = document.lastModified;
     </script>
 </body>

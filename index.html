@@ -28,11 +28,15 @@
         </ul>
     </main>
     <footer>
-        &copy; 2020 | Tiffany Quinlan | Arizona | <a href="https://www.byui.edu/online" target="_blank">BYUI Onlilne
+        &copy; <span id="year"></span> | Tiffany Quinlan | <a href="https://www.byui.edu/online" target="_blank">BYUI
+            Onlilne
             Learning</a>
-        <p>Last Updated: <span id="last"></span>></p>
+        <p>Last Updated: <span id="last"></span></p>
     </footer>
     <script>
+        var date = new Date();
+        var year = date.getFullYear();
+        document.getElementById('year').textContent = year;
         document.getElementById('last').textContent = document.lastModified;
     </script>
 </body>

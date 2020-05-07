@@ -45,9 +45,9 @@
 
         <section>
             <img src="images/wethermanlogo.png" alt="wether man">
-            <text>“I'm the Whether Man, not the Weather Man, for after all it's more important to know whether there
+            <p>“I'm the Whether Man, not the Weather Man, for after all it's more important to know whether there
                 will be
-                weather than what the weather will be.” ― Norton Juster, The Phantom Tollbooth</text>
+                weather than what the weather will be.” ― Norton Juster, The Phantom Tollbooth</p>
         </section>
 
 
@@ -72,10 +72,12 @@
         &copy; <span id="year"></span> | Tiffany Quinlan | <a href="https://www.byui.edu/online" target="_blank">BYUI
             Onlilne
             Learning</a>
-        <p><span id="updated">Last Updated: <span id="lastupdated"></span></span></p>
+        <p>Last Updated: <span id="last"></span></p>
     </footer>
     <script>
-        document.getElementById('updated').textContent = document.lastModified;
+        var date = new Date();
+        var year = date.getFullYear();
+        document.getElementById('year').textContent = year;
+        document.getElementById('last').textContent = document.lastModified;
     </script>
-    <script src="js/lastupdate.js"></script>
 </body>

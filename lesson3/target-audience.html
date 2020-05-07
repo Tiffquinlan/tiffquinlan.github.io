@@ -51,12 +51,97 @@
 
         <h1>Persona</h1>
         <h2>Alex</h2>
-        <p>All about Alex and why he comes here.</p>
+        <p>Alex is a cuious young boy, with lots of energy. He has always loved going to school and enjoys learning. He
+            likes to read but is easily distracted.Recently he started doing more studies from home online. His teacher
+            asked him to do a full report on his hometown of Soda Springs, ID. He must include the current weather
+            stories
+            as part of his news section of his essay.</p>
 
         <h2>Mike</h2>
-        <p>All about Mike and why he comes here.</p>
+        <p>Mike is also a young boy living in Idaho. He and his siblings are homeschooled and are currently working on a
+            weather unit in there science studies. They were asked to research about types of weather and why they
+            occur. As part of the repot will also be keeping track of local weather trends. He and is his sisters usally
+            work on projects togeather sharing the family computer.</p>
 
         <h1>Scenarios</h1>
+
+        <div class="row">
+            <div class="column">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <h1>What is the weather like today in Preston, ID?</h1>
+                        </div>
+                        <div class="flip-card-back">
+                            <h1>Good Question</h1>
+                            <p>the answer to this and many other questions will be found on this site.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <h1>when do clouds start to rain?</h1>
+                        </div>
+                        <div class="flip-card-back">
+                            <h1>Good Question</h1>
+                            <p>the answer to this and many other questions will be found on this site.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <h1>What causes Sunburns?</h1>
+                        </div>
+                        <div class="flip-card-back">
+                            <h1>Good Question</h1>
+                            <p>the answer to this and many other questions will be found on this site.</p>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+            <div class="column">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <h1>Will I need my umbrella on Saturday in Soda Springs?</h1>
+                        </div>
+                        <div class="flip-card-back">
+                            <h1>Good Question</h1>
+                            <p>the answer to this and many other questions will be found on this site.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <h1>What causes the four seasons?</h1>
+                        </div>
+                        <div class="flip-card-back">
+                            <h1>Good Question</h1>
+                            <p>the answer to this and many other questions will be found on this site.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <h1>Where is the safest place to go when a tornado hits? </h1>
+                        </div>
+                        <div class="flip-card-back">
+                            <h1>Good Question</h1>
+                            <p>the answer to this and many other questions will be found on this site.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
         <h2>User stories</h2>
         <p>Additional information and examples... add text here</p>
 
@@ -68,9 +153,12 @@
         &copy; <span id="year"></span> | Tiffany Quinlan | <a href="https://www.byui.edu/online" target="_blank">BYUI
             Onlilne
             Learning</a>
-        <p><span id="updated">Last Updated: <span id="lastupdated"></span></span></p>
+        <p>Last Updated: <span id="last"></span></p>
     </footer>
     <script>
+        var date = new Date();
+        var year = date.getFullYear();
+        document.getElementById('year').textContent = year;
         document.getElementById('last').textContent = document.lastModified;
     </script>
 </body>
