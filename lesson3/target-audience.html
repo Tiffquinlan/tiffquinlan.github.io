@@ -10,16 +10,19 @@
     <link rel="stylesheet" href="css/small.css">
     <link rel="stylesheet" href="css/medium.css">
     <link rel="stylesheet" href="css/large.css">
-
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP&family=Patrick+Hand&display=swap"
+        rel="stylesheet">
 </heaad>
 
 <body>
     <!-- HEADER HERE -->
     <header class="clearfix">
         <img src="images/facelogo.png" alt="logo">
-        <h1>The Whether Man</h1>
-        <h2>whether there will be
-            weather</h2>
+        <slogan>
+            <h1>The Whether Man</h1>
+            <h2>tells you whether there will be
+                weather</h2>
+        </slogan>
     </header>
 
 
@@ -36,27 +39,36 @@
 
     <!-- CONTENT HERE -->
     <main>
-    
+
         <avatar>
             <img src="images/cloudy.jpg" alt="wether man">
         </avatar>
-        
+
         <h1>Target Audience</h1>
         <p>Be a source for learning about the local weather for children and youth in several cities. This site will
             show current weather and give additional information to feed the curiocity of young minds.</p>
-        <img src="images/rain.webp" alt="Rain">
+        <img src="images/boyslearning.jpg" alt="Boys Learning">
 
         <h1>Persona</h1>
-        <p>more info</p>
-        <img src="images/clouds.jpg" alt="Clouds">
-  
+        <h2>Alex</h2>
+        <p>All about Alex and why he comes here.</p>
+
+        <h2>Mike</h2>
+        <p>All about Mike and why he comes here.</p>
+
         <h1>Scenarios</h1>
-        <p>from <a href=" https://www.iconfinder.com" target="_blank">Icon Finder</a></p>
+        <h2>User stories</h2>
+        <p>Additional information and examples... add text here</p>
+
+
+
     </main>
 
     <footer>
-        &copy; 2020 | Tiffany Quinlan | <a href="https://tiffquinlan.github.io/" target="_blank">additional sites</a>
-        <p>Last Updated: <span id="last"></span></p>
+        &copy; <span id="year"></span> | Tiffany Quinlan | <a href="https://www.byui.edu/online" target="_blank">BYUI
+            Onlilne
+            Learning</a>
+        <p><span id="updated">Last Updated: <span id="lastupdated"></span></span></p>
     </footer>
     <script>
         document.getElementById('last').textContent = document.lastModified;
