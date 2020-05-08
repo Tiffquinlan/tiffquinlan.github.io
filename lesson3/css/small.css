@@ -11,25 +11,6 @@ html {
     box-sizing: border-box;
 }
 
-/* unvisited link */
-a:link {
-    color: #F6D55C;
-    text-decoration: none;
-  }
-  
-  /* visited link */
-  a:visited {
-    color: #F6D55C;
-  }
-  /* mouse over link */
-  a:hover {
-      color: #ED553B;
-    }
-  
-  /* selected link */
-  a:active {
-    color: #F6D55C;
-  }
 
 
   
@@ -51,6 +32,7 @@ body {
     font-family: 'Noto Serif JP', serif;
     color: #173F5F;
 }
+body a{color: #ED553B;}
 
 body h1,
 h2,
@@ -206,17 +188,18 @@ section img {
 
 /*----------- FOOTER --------------*/
 footer {
-    
-
-    
     background-color: #173F5F;
     padding: .5rem 2%;
     text-align: center;
     color: #f1f1f1;
 }
 
+footer a{
+    color: #F6D55C;
+    text-decoration: none;
+  }
 
-
+  
 /*----- Clearfix: Force an Element not to collapse -----*/
 .clearfix:after {
     content: "";
