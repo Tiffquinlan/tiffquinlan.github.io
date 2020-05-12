@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-<heaad>
+
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Whether Man.com</title>
@@ -13,7 +14,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Noto+Serif+JP&display=swap" rel="stylesheet">
 
 
-</heaad>
+</head>
 
 <body>
     <!-- HEADER HERE -->
@@ -21,11 +22,11 @@
         <header class="clearfix">
 
             <img src="images/facelogo.png" alt="logo">
-            <slogan>
+            <div class="slogan">
                 <h1>The Whether Man</h1>
                 <h2>tells you whether there will be
                     weather</h2>
-            </slogan>
+            </div>
         </header>
     </div>
 
@@ -79,7 +80,7 @@
         var date = new Date();
         var d = new Date();
         // document.getElementById("day").innerHTML = d.getDay();
-        var days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+        var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
         document.getElementById("day").innerHTML = days[d.getDay()];
         document.getElementById('date').textContent = document.lastModified;
     </script>
