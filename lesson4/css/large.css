@@ -11,10 +11,12 @@
 
 
 /*----------- HEADER --------------*/
+div#headerWrapper {background-color: #3CAEA3;}
 
 
 
 /*----------- NAVIGATION --------------*/
+div#navWrapper {background-color: #173F5F;}
 
 
 
@@ -23,5 +25,6 @@
 
 
 /*----------- FOOTER --------------*/
+div#footerWrapper {background-color: #173F5F;}
     
 } /* end of media query */

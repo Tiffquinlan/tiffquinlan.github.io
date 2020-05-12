@@ -17,28 +17,31 @@
 
 <body>
     <!-- HEADER HERE -->
-    <header class="clearfix">
+    <div id="headerWrapper">
+        <header class="clearfix">
 
-        <img src="images/facelogo.png" alt="logo">
-        <slogan>
-            <h1>The Whether Man</h1>
-            <h2>tells you whether there will be
-                weather</h2>
-        </slogan>
-
-    </header>
+            <img src="images/facelogo.png" alt="logo">
+            <slogan>
+                <h1>The Whether Man</h1>
+                <h2>tells you whether there will be
+                    weather</h2>
+            </slogan>
+        </header>
+    </div>
 
 
     <!-- NAVIGATION HERE -->
-    <nav class="clearfix">
-        <ul>
-            <li><a href="/lesson3/index.html">The Whether Man</a></li>
-            <li class="active"><a href="preston.html">Preston</a></li>
-            <li><a href="target-audience.html">Target Audience</a></li>
-            <li><a href="color-scheme.html">Color Scheme</a></li>
-            <li><a href="typography.html">Typography</a></li>
-        </ul>
-    </nav>
+    <div id="navWrapper">
+        <nav class="clearfix">
+            <ul>
+                <li><a href="/lesson3/index.html">The Whether Man</a></li>
+                <li class="active"><a href="preston.html">Preston</a></li>
+                <li><a href="target-audience.html">Target Audience</a></li>
+                <li><a href="color-scheme.html">Color Scheme</a></li>
+                <li><a href="typography.html">Typography</a></li>
+            </ul>
+        </nav>
+    </div>
 
 
     <!-- CONTENT HERE -->
@@ -48,28 +51,36 @@
 
 
         <p>Weather Summary <br>High: xx <br>Low: xx <br>Wind: xx </p>
-        <img src="images/sky.webp" alt="Domain Name">
+        <!-- <img src="images/sky.webp" alt="Domain Name"> -->
 
         <h2>Five Day Forecast</h2>
 
         <h2>Article Title</h2>
-        
+
         <p>on this day in history -</p>
         <img src="" alt="This Day in History">
-        
+
         <h2>Contact Us</h2>
-        <h3>Address:</h3> <p>The Weather Center <br>123 Main Street <br>Franklin, MI 87654</p> 
-        <h3>Phone: </h3> <p>(801)555-1234</p>
-        <h3>Phone: </h3> <p>cntact@yoururl.com</p>
+        <h3>Address:</h3>
+        <p>The Weather Center <br>123 Main Street <br>Franklin, MI 87654</p>
+        <h3>Phone: </h3>
+        <p>(801)555-1234</p>
+        <h3>Phone: </h3>
+        <p>cntact@yoururl.com</p>
         <img src="maps.google.com" alt="Preston Google map">
     </main>
 
-    <footer>
-        &copy; Tiffany Quinlan | <span id="last"></span>
-    </footer>
+    <div id="footerWrapper">
+        <footer>
+            &copy; Tiffany Quinlan | <span id="day"></span>, <span id="date"></span>
+        </footer>
+    </div>
     <script>
         var date = new Date();
-        var year = date.getFullYear();
-        document.getElementById('last').textContent = document.lastModified;
+        var d = new Date();
+        // document.getElementById("day").innerHTML = d.getDay();
+        var days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+        document.getElementById("day").innerHTML = days[d.getDay()];
+        document.getElementById('date').textContent = document.lastModified;
     </script>
 </body>
