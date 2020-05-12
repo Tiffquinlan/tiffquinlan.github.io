@@ -2,9 +2,6 @@
 html {
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
 }
 
 /*----------- apply a natural box layout model to all elements --------------*/
@@ -47,8 +44,8 @@ h3 {
 header {
     background-color: #3CAEA3;
     color: black;
-    display: grid;
-    grid-template-columns: 1fr;
+    /* display: grid;
+    grid-template-columns: 1fr; */
     padding: 10px;
 }
 
@@ -66,7 +63,7 @@ header h1 {
 header h2 {
     margin: 0;
     font-weight: normal;
-    font-size: .8rem;
+    font-size: .7rem;
     font-family: 'Noto Serif JP', serif;
 }
 
