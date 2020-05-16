@@ -13,6 +13,38 @@ html {
 
 
 
+    .container {
+        display: inline-block;
+        cursor: pointer;
+    }
+
+    .bar1,
+    .bar2,
+    .bar3 {
+        width: 35px;
+        height: 5px;
+        background-color: #173F5F;
+        margin: 6px 0;
+        transition: 0.4s;
+    }
+
+    .change .bar1 {
+        -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+        transform: rotate(-45deg) translate(-9px, 6px);
+    }
+
+    .change .bar2 {
+        opacity: 0;
+    }
+
+    .change .bar3 {
+        -webkit-transform: rotate(45deg) translate(-8px, -8px);
+        transform: rotate(45deg) translate(-8px, -8px);
+    }
+
+
+
+
   
 
 /* ---- COLORS----- 
@@ -22,6 +54,8 @@ html {
     Yellow      #F6D55C
     Orange      #ED553B
 */
+
+
 
 
 
@@ -52,7 +86,7 @@ header {
 
 header img {
     float: left;
-    width: 50px;
+    width: 45px;
 }
 
 header h1 {
@@ -68,36 +102,58 @@ header h2 {
     font-family: 'Noto Serif JP', serif;
 }
 
+
+
 /*----------- NAVIGATION --------------*/
 nav {
     background-color: #173F5F;
     text-align: center;
+    padding-top: 0;
 }
 
-nav ul {
+.navigation {
+    list-style: none;
+    padding: 0;
+}
+
+.navigation ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
-}
-
-nav ul li a {
-    display: block;
-     color:#F6D55C;
-    padding: .5rem 0;
-    text-decoration: none;
-    font-size: .9rem;
-    text-align: center;
-}
-
-nav ul li a:hover {
-    background-color: #F6D55C;
-    color: #20639B;
 }
 
 nav ul li.active a {
     background-color: #F6D55C;
     color: #173F5F;
 }
+
+.navigation li:first-child {
+    display: block;
+}
+
+.navigation li {
+    display: none;
+}
+
+.navigation a {
+    display: block;
+    color:#F6D55C;
+    padding: .5rem 0;
+    text-decoration: none;
+    font-size: .9rem;
+    text-align: center;
+}
+
+.navigation a:hover {
+    background-color: #F6D55C;
+    color: #20639B;
+}
+
+.responsive li {
+    display: block;
+    margin: 0;
+}
+
 
 /*----------- MAIN --------------*/
 main {
@@ -177,9 +233,9 @@ section {
     border-style: ridge;
     border-color: #20639B;
     border-radius: 5px;
-    background-color: #ED553B;
+    background-color:gray;
     color: white;
-    border-radius: 5px;
+
 }
 
 section img {

@@ -2,10 +2,8 @@
 html {
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
 }
+
 
 /*----------- apply a natural box layout model to all elements --------------*/
 * {
@@ -52,6 +50,7 @@ header {
     padding: 10px;
 }
 
+
 header img {
     float: left;
     width: 50px;
@@ -71,6 +70,8 @@ header h2 {
 }
 
 /*----------- NAVIGATION --------------*/
+
+
 nav {
     background-color: #173F5F;
     text-align: center;
