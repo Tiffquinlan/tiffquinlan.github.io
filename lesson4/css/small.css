@@ -108,7 +108,7 @@ header h2 {
 /*----------- NAVIGATION --------------*/
 nav {
     background-color: #173F5F;
-    text-align: center;
+    /* text-align: center; */
     padding-top: 0;
 }
 
@@ -139,10 +139,10 @@ nav ul li.active a {
 .navigation a {
     display: block;
     color:#F6D55C;
-    padding: .5rem 0;
+    padding: .5rem;
     text-decoration: none;
     font-size: .9rem;
-    text-align: center;
+    /* text-align: center; */
 }
 
 .navigation a:hover {
