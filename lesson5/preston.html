@@ -19,6 +19,12 @@
 </head>
 
 <body>
+
+    <div id="banner" >
+            <p>Saturday = Pancakes in the Park</p>
+            <p>9:00 am Saturday at the city park.</p>
+    </div>
+
     <!-- HEADER HERE -->
     <div id="headerWrapper">
         <header class="clearfix">
@@ -52,63 +58,91 @@
         </nav>
     </div>
 
-    
+
 
     <!-- CONTENT HERE -->
     <main>
         <!-- wayfinding Menu matches page name -->
+        <div class= "title">
         <h1>Preston</h1>
-
+        </div>
         <div class="hero">
-            <img src="images/sky.webp" alt="Domain Name">
-            <section class ="weatherReport">
-                <p>High: xx <br>Low: xx <br>Wind: xx </p>
+            <img src="images/hero.jpg" alt="Domain Name">
+            <section class="weatherReport">
+                <p>High: 76 &deg;F <br>Low: 69 &deg;F <br>Wind: 5 mph </p>
             </section>
         </div>
+
+        <div class= "title">
+            <h2>Five Day Forcast</h2>
+        </div>
         <section class="forecast">
-
-                <Div>
-                    <h5>Monday</h5>
-                    <img src="images/rainy.jpg" alt="rainy">
-                    <p>58&deg;</p>
-                </Div>
-                <Div>
-                    <h5>Tuesday</h5>
-                    <img src="images/sunny.jpg" alt="sunny">
-                    <p>60&deg;</p>
-                </Div>
-                <Div>
-                    <h5>Wednesday</h5>
-                    <img src="images/rainy.jpg" alt="rainy">
-                    <p>55&deg;</p>
-                </Div>
-                <Div>
-                    <h5>Thursday</h5>
-                    <img src="images/cloudy.jpg" alt="cloudy">
-                    <p>40&deg;</p>
-                </Div>
-                <Div>
-                    <h5>Friday</h5>
-                    <img src="images/snowy.jpg" alt="snowy">
-                    <p>30&deg;</p>
-                </Div>
-
-
+            <Div>
+                <h5>Monday</h5>
+                <img src="images/rainy.jpg" alt="rainy">
+                <p>58&deg;</p>
+            </Div>
+            <Div>
+                <h5>Tuesday</h5>
+                <img src="images/sunny.jpg" alt="sunny">
+                <p>60&deg;</p>
+            </Div>
+            <Div>
+                <h5>Wednesday</h5>
+                <img src="images/rainy.jpg" alt="rainy">
+                <p>55&deg;</p>
+            </Div>
+            <Div>
+                <h5>Thursday</h5>
+                <img src="images/cloudy.jpg" alt="cloudy">
+                <p>40&deg;</p>
+            </Div>
+            <Div>
+                <h5>Friday</h5>
+                <img src="images/snowy.jpg" alt="snowy">
+                <p>30&deg;</p>
+            </Div>
         </section>
         <section>
-            <div class="row">
-                <div class="column">
-                    <h2>Contact Us</h2>
-                    <h3>Address:</h3>
-                    <p>The Weather Center <br>123 Main Street <br>Franklin, MI 87654</p>
-                    <!-- <img src="maps.google.com" alt="Preston Google map"> -->
-                </div>
-                <!-- <div class="column">
-                    <h3>Phone: </h3>
-                    <p>(801)555-1234</p>
-                    <h3>Phone: </h3>
-                    <p>cntact@yoururl.com</p>
-                </div> -->
+            <div class="title">
+                <h2>Article</h2>
+            </div>
+            <div class="article">
+                <img src="images/fishing.jpg" alt="Fishing">
+                <p>Be ready for hard fighting, healthy wild trout! There is no stocking on the main Big Wood River which
+                    runs for 137 miles in central Idaho. Team up with a local outfitter to help you create the perfect
+                    cast and amazing memories in this breathtaking location.
+                    THINGS TO KNOW
+                    Fish Species in the Big Wood River: Rainbow, Brown and Brook trout.
+                    General season Memorial Day weekend to the end of November.
+                    Some areas open year-round for catch and release.
+                    Any person 14 years of age or older must have a valid license or permit to fish in Idaho. Resident
+                    children under 14 years of age need not be licensed and may have their own separate limit.
+                    Nonresident children under 14 years of age if not licensed, must be accompanied by the holder of a
+                    valid fishing license and their fish must be included in the license holder's limit or the child may
+                    purchase their own license and have their own limit. license information can be found </p>
+                <a href="https://visitidaho.org/things-to-do/fishing/big-wood-river/" target="_blank">Learn more @
+                    VisitIdaho.org </a>
+            </div>
+        </section>
+        <section>
+            <div class="title">
+                <h2>Contact Us</h2>
+            </div>
+            <div class="contact">
+                    <div>
+                        <h3>Address:</h3>
+                        <p>The Weather Center <br>123 Main Street <br>Soda Springs, ID 87654</p>
+                    </div>
+                    <div>
+                        <h3>Phone: </h3>
+                        <p>(801)555-1234</p>
+                        <h3>Email: </h3>
+                        <p>cntact@yoururl.com</p>
+                    </div>
+                    <div>
+                        <img src="images/map.PNG" alt="Idaho Google map">
+                    </div>
             </div>
 
         </section>
@@ -121,17 +155,5 @@
         </footer>
     </div>
     <script src="js/javascript.js"></script>
-    <script>
-        var date = new Date();
-        var d = new Date();
-        // document.getElementById("day").innerHTML = d.getDay();
-        var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-        document.getElementById("day").innerHTML = days[d.getDay()];
-        document.getElementById('date').textContent = document.lastModified;
 
-        function myFunction(x) {
-            x.classList.toggle("change");
-
-        }
-    </script>
 </body>

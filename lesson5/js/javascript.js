@@ -1,5 +1,6 @@
     const hambutton = document.querySelector('.ham');
     const mainnav = document.querySelector('.navigation')
+   
 
     hambutton.addEventListener('click', () => {
         mainnav.classList.toggle('responsive')
@@ -19,7 +20,13 @@
     date= DayNum + " " + month + " " + year;
     document.getElementById('date').textContent = date;
 
+    const element = document.getElementById("banner");
+    if (days[d.getDay()]=="Friday"){
+        element.classList.add("showme");
+    } else {
+        element.classList.add("hideme");
+    }
+
     function myFunction(x) {
         x.classList.toggle("change");
-
     }

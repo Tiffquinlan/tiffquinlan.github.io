@@ -84,6 +84,7 @@ main avatar img{
     display: table;
     clear: both;
   }
+  
 
   section.forecast {
     display: grid;
@@ -99,7 +100,7 @@ main avatar img{
     }
     section.forecast div img{
         float: none;
-        width: 7rem;
+        width: 5rem;
         border-radius: 20px;  
         border-style: solid;
         border-color: #173F5F;
@@ -108,6 +109,15 @@ main avatar img{
     color: #173F5F;
     }
 
+    .article img{
+        width: 300px;
+        float: right;
+        margin: 10px;
+    }
+    .contact{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 /*----------- FOOTER --------------*/
     
 } /* end of media query */
