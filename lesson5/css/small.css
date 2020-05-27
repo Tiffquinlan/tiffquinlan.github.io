@@ -79,7 +79,7 @@ body h1,h2,h3 {
 /*----------- BANNER --------------*/
 div#banner{
     background-color: #F6D55C;
-    margin: none;
+    margin: 0;
     padding: 3px;
     text-align: center;
     font-size: .6rem;
@@ -100,7 +100,7 @@ header {
     grid-template-columns: 1fr; */
     /* padding: 10px; */
     padding-top: 15px;
-    margin: none;
+    margin: 0;
 }
 
 header img {
