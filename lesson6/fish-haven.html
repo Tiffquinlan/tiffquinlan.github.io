@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Whether Man.com</title>
+    <meta name="description" content="another whether site" />
+    <meta name="author" content="Tiffany Quinlan" />
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Noto+Serif+JP&display=swap" rel="stylesheet">
+
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+
+
+</head>
+
+<body>
+    <!-- HEADER HERE -->
+    <div id="headerWrapper">
+        <header class="clearfix">
+
+            <img src="images/facelogo.png" alt="logo">
+            <div class="slogan">
+                <h1>The Whether Man</h1>
+                <h2>tells you whether there will be
+                    weather</h2>
+            </div>
+        </header>
+    </div>
+
+
+    <!-- NAVIGATION HERE -->
+    <div id="navWrapper">
+        <nav>
+            <ul class="navigation">
+                <li><a class='ham' herf="#">&#9776; Menu</a></li>
+                <li><a href="/lesson3/index.html">Home</a></li>
+                <li><a href="preston.html">Preston</a></li>
+                <li><a href="soda-springs.html">Soda Springs</a></li>
+                <li class="active"><a href="fish-haven.html">Fish Haven</a></li>
+                <li><a href="storm-center.html">Storm Center</a></li>
+                <li><a href="#">Gallery</a></li>
+                <!-- <li><a class="ham" onclick="myFunction(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div></a></li>  -->
+            </ul>
+        </nav>
+    </div>
+
+    
+
+    <!-- CONTENT HERE -->
+    <main>
+        <!-- wayfinding Menu matches page name -->
+        <h1>Fish Haven</h1>
+
+        <section>
+            <h2>content</h2>
+        </section>
+        <section>
+            <h2>content</h2>
+        </section>
+        <section>
+            <div class="row">
+                <div class="column">
+                    <h3>Content</h3>
+                </div>
+                <div class="column">
+                    <h3>Content</h3>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+    <div id="footerWrapper">
+        <footer>
+            &copy; Tiffany Quinlan | <span id="day"></span>, <span id="date"></span>
+        </footer>
+    </div>
+    <script src="js/javascript.js"></script>
+    <script>
+        var date = new Date();
+        var d = new Date();
+        // document.getElementById("day").innerHTML = d.getDay();
+        var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+        document.getElementById("day").innerHTML = days[d.getDay()];
+        document.getElementById('date').textContent = document.lastModified;
+
+        function myFunction(x) {
+            x.classList.toggle("change");
+
+        }
+    </script>
+</body>
