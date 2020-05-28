@@ -203,7 +203,7 @@ main smpic img {
     position: relative;
     width: 100%;
 }
-herophoto
+
 
 .weatherReport {
     position: absolute;
@@ -212,6 +212,7 @@ herophoto
     padding: .2rem;
     background-color: #3CAEA3;
     opacity: .9;
+    font-size: .75rem;
 }
 
 .forecast {
@@ -227,6 +228,9 @@ display: none;
     width: 90%;
 }
 
+.contact iframe{
+    display: none;
+}
 
 
 

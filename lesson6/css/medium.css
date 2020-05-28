@@ -66,12 +66,10 @@ main avatar img{
 }
 
 .weatherReport {
-    position: absolute;
     top: 20px;
-    left: 30px;
     padding: .5rem;
-    background-color: #3CAEA3;
-    opacity: .9;
+    font-size: 1rem;
+  
 }
 
 
@@ -119,6 +117,10 @@ main avatar img{
     .contact{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .contact iframe{
+        display: grid;
     }
 /*----------- FOOTER --------------*/
     
