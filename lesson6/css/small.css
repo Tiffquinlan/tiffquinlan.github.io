@@ -224,8 +224,13 @@ display: none;
     border-width: 1px;
 }
 .article img{
-    Float: center;
     width: 90%;
+}
+.article a {
+    display: block;
+    color:#ED553B;
+    text-decoration: none;
+    font-weight: bold;
 }
 
 .contact iframe{
