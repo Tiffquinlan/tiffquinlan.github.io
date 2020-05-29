@@ -67,11 +67,10 @@
         </div>
         <div class="hero">
             <picture class = 'herophoto'>
-                <img src="images/hero" alt="small hero image" sizes="100vw"
-                srcset= "images/hero450.jpg 450w,
-                        images/hero800.jpg 800w,
-                        images/hero1200.jpg 1200w"
-                >
+                <source srcset="images/hero450.jpg" media="(max-width: 450px)">
+                <source srcset="images/hero800.jpg" media="(min-width: 450px) and (max-width: 800px)">
+                <source srcset="images/hero1200.jpg"  media="(min-width: 800px)">
+                <img src="images/hero.jpg" alt="Sunny Sky Image">
 
               </picture>
             <section class="weatherReport">
