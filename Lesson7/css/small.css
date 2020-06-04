@@ -181,9 +181,6 @@ main {
     min-height: 10rem;
 }
 
-main img {
-    width: 100%;
-}
 
 main avatar img {
     float: right;
@@ -238,7 +235,25 @@ display: none;
 }
 
 
+div#gallerywrapper{
+    display: block;
+}
 
+div.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+  }
+
+  div.gallery img {
+    padding: 10px;
+    width: 100%;
+  }
+  
+  div.desc {
+    padding: 15px;
+    text-align: center;
+    
+  }
 
 
 /*----------- FOOTER --------------*/

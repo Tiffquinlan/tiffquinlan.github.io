@@ -122,6 +122,17 @@ main avatar img{
     .contact iframe{
         display: grid;
     }
+
+    
+div#gallerywrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+div.gallery {
+    margin: 20px;
+  }
+
 /*----------- FOOTER --------------*/
     
 } /* end of media query */

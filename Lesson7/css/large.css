@@ -22,6 +22,11 @@ div#navWrapper {background-color: #173F5F;}
 
 /*----------- MAIN --------------*/
 
+div#gallerywrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
 
 
 /*----------- FOOTER --------------*/
