@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lazy load practice</title>
+    <meta name="description" content="loading images in gallery" />
+    <meta name="author" content="Tiffany Quinlan" />
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/lazyload.css">
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Noto+Serif+JP&display=swap" rel="stylesheet">
+
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+
+
+</head>
+
+<body>
+    <!-- HEADER HERE -->
+    <div id="headerWrapper">
+        <header class="clearfix">
+
+                <h1>Lazy Load Images</h1>
+            
+        </header>
+    </div>
+
+
+    <!-- CONTENT HERE -->
+    <main>
+    
+            <img src='images/wheather/placeholder.png' data-src="images/wheather/sun.jpg" alt="sun">    
+            <img src='images/wheather/placeholder.png' data-src="images/wheather/snow.jpg" alt="snow">
+            <img src='images/wheather/placeholder.png' data-src="images/wheather/stormclouds.jpg" alt="storm clouds">
+            <img src='images/wheather/placeholder.png' data-src="images/wheather/lightning.jpg" alt="lightning">
+            <img src='images/wheather/placeholder.png' data-src="images/wheather/oceanstorm.jpg" alt="ocean storm">
+            <img src='images/wheather/placeholder.png' data-src="images/wheather/rainbow.jpg" alt="rainbow">
+            <img src='images/wheather/placeholder.png' data-src='images/wheather/fog.jpg' alt='fog'>
+            <img src='images/wheather/placeholder.png' data-src="images/wheather/whiteclouds.jpg" alt="white clouds">
+            <img src='images/wheather/placeholder.png' data-src="images/wheather/sundesert.jpg" alt="desert sun">
+
+    </main>
+
+    <div id="footerWrapper">
+        <footer>
+            &copy; Tiffany Quinlan 
+        </footer>
+    </div>
+    
+    <script src="js/app.js" defer></script>
+</body>
