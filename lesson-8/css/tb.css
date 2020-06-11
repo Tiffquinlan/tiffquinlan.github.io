@@ -44,9 +44,11 @@ tr:nth-child(even) {
 }
 
 caption{
-    background-color:#628ca6;
-    padding-top: 6px;
-    padding-bottom: 6px;
+    background-color:#7fb9c2;
+    padding-top: 10px;
+    padding-bottom: 10px;
     font-size: 1rem;
     box-shadow: 10px 10px 20px #7fb9c2;
+    border: 2px solid #cecece;
+    border-top: none;
 }
