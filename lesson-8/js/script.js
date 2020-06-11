@@ -8,7 +8,8 @@ const months = ["January","February","March","April","May","June","July","August
 ];
 // document.getElementById("day").innerHTML = days[d.getDay()];
 year = d.getFullYear();
-month = months[d.getMonth()];
+// month = months[d.getMonth()];
+month = d.getMonth();
 DayNum = d.getDate();
-date= DayNum + " " + month + " " + year;
+date= DayNum + "." + month + "." + year;
 document.getElementById('date').textContent = date;

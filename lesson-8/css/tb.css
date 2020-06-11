@@ -43,8 +43,10 @@ tr:nth-child(even) {
     background-color: #e7f0ed;
 }
 
-/* tfoot{
+caption{
     background-color:#628ca6;
     padding-top: 6px;
     padding-bottom: 6px;
-} */
+    font-size: 1rem;
+    box-shadow: 10px 10px 20px #7fb9c2;
+}
