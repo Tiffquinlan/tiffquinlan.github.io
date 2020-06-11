@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Build</title>
+    <meta name="description" content="Acme Wildwest copy" />
+    <meta name="author" content="Tiffany Quinlan" />
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/tb.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;500&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+    <table>
+        <thead>
+            <th colspan="3">ACME Wildwest</th>
+        </thead>
+        <tbody>
+            <tr id=colnames>
+                <td>Period</td>
+                <td>Sales</td>
+                <td>Sales Goal</td>
+            </tr>
+            <tr>
+                <td>August</td>
+                <td>$3,590</td>
+                <td>$4,000</td>
+            </tr>
+            <tr>
+                <td>September</td>
+                <td>$4,420</td>
+                <td>$5,000</td>
+            </tr>
+            <tr>
+                <td>October</td>
+                <td>$4,870</td>
+                <td>$5,000</td>
+            </tr>
+            <tr>
+                <td>November</td>
+                <td>$8,610</td>
+                <td id="improvment">$7,500</td>
+            </tr>
+            <tr>
+                <td><i>Black Friday</i></td>
+                <td colspan="2">$3,200</td>
+            </tr>
+            <tr>
+                <td>December</td>
+                <td>$6,820</td>
+                <td>$7,500</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3">Compiled <span id="date"></span> by bRauls</td>
+            </tr>
+        </tfoot>
+    </table>
+
+
+
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
