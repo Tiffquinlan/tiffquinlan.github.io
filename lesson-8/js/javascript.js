@@ -6,7 +6,6 @@
         mainnav.classList.toggle('responsive')
     }, false);
 
-
     var date = new Date();
     var d = new Date();
     // document.getElementById("day").innerHTML = d.getDay();
