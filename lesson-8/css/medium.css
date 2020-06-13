@@ -126,20 +126,15 @@ main avatar img{
 
 /*----------- FOURM --------------*/
 
-
-
-
-.col-25 {
-    float: left;
-    width: 25%;
-    margin-top: 6px;
+input[type=text], input[type=number], input[type=tel], input[type=email]{
+    width: 50%;
   }
-  
-.col-75 {
-    float: left;
-    width: 75%;
-    margin-top: 6px;
+
+textarea {
+    width: 50%;
   }
+
+
 
 
  

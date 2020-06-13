@@ -19,29 +19,6 @@
     date= DayNum + " " + month + " " + year;
     document.getElementById('date').textContent = date;
 
-    const element = document.getElementById("banner");
-    if (days[d.getDay()]=="Friday"){
-        element.classList.add("showme");
-    } else {
-        element.classList.add("hideme");
-    }
-
-    function myFunction(x) {
-        x.classList.toggle("change");
-    }
-
-
-    const ltempNumber = parseFloat(document.getElementById('ltemp').textContent);
-    const windNumber = parseFloat(document.getElementById('wind').textContent);
-    // console.log(windNumber);
-    let windchill = 35.74 +(0.6215 * ltempNumber) - (35.75 * Math.pow(windNumber,0.16)) + (0.4275 * ltempNumber)*Math.pow(windNumber, 0.16);
-    // console.log(windchill);
-    windchill = Math.round(windchill);
-    if (windNumber>3 && ltempNumber<=50){
-        document.getElementById('chill').textContent = "Wind Chill " +windchill+"\xB0F";
-    }else{
-        document.getElementById('chill').textContent = "No wind chill today"
-    }
 
     function adjustRating(rating) {
         document.getElementById("ratingvalue").innerHTML = rating;
