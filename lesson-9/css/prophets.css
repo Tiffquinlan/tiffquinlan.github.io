@@ -1,0 +1,57 @@
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+
+header {
+    text-align: center;
+}
+
+.cards {
+    margin: 10px;
+    padding: 5px;
+    background-color: rgb(230, 230, 230);
+    box-shadow: 5px 5px 7px grey;
+}
+
+section {
+    background-color: lavender;
+    margin: 10px;
+    padding: 5px;
+    border: 1px solid darkslateblue;
+    text-align: center;
+}
+
+body h1 {
+    color: darkslateblue;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 2rem;
+}
+
+.cards h2 {
+    color: darkslateblue;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: .7rem;
+}
+
+/* 35em is also 640 (if basefont is 16px) */
+@media only screen and (min-width: 40rem) {
+
+    /****Cards****/
+    .cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+
+@media only screen and (min-width: 64rem) {
+
+    /****Cards****/
+    .cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
