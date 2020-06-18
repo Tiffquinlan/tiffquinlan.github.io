@@ -13,15 +13,16 @@ fetch(requestURL)
         for (let i = 0; i < prophets.length; i++) {
             let card = document.createElement('section');
             let h2 = document.createElement('h2');
-            let date = document.createElement('date');
-            let place = document.createElement('place');
-            let image = document.createElement('image');
+            let date = document.createElement('h3');
+            let place = document.createElement('h3');
+            let image = document.createElement('img');
             
 
             h2.textContent = prophets[i].name + ' ' + prophets[i].lastname;
-            date.textContent = "date of birth" + prophets[i].birthdate + "\n";
+            date.textContent = "date of birth " + prophets[i].birthdate + "\n";
             place.textContent = "place of birth " + prophets[i].birthplace + "\n";
-            image.textContent =  prophets[i].name + ' ' + prophets[i].lastname +' '+ prophets[i].order;
+            image.setAttribute('src', prophets[i].imageurl);
+            image.setAttribute('alt',  prophets[i].name + ' ' + prophets[i].lastname +' '+ prophets[i].order);
 
 
             card.appendChild(h2);
