@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Whether Man.com</title>
+    <meta name="description" content="another whether site" />
+    <meta name="author" content="Tiffany Quinlan" />
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Noto+Serif+JP&display=swap" rel="stylesheet">
+
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+</head>
+
+<body>
+    <!-- HEADER HERE -->
+    <div id="headerWrapper">
+        <header class="clearfix">
+
+            <img src="images/facelogo.png" alt="logo">
+            <div class="slogan">
+                <h1>The Whether Man</h1>
+                <h2>tells you whether there will be
+                    weather</h2>
+            </div>
+        </header>
+    </div>
+
+
+    <!-- NAVIGATION HERE -->
+    <div id="navWrapper">
+        <nav>
+            <ul class="navigation">
+                <li><a class='ham' herf="#">&#9776; Menu</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="preston.html">Preston</a></li>
+                <li><a href="soda-springs.html">Soda Springs</a></li>
+                <li><a href="fish-haven.html">Fish Haven</a></li>
+                <li class="active"><a href="stormcenter.html">Storm Center</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+    </div>
+
+
+
+    <!-- CONTENT HERE -->
+    <main>
+
+        <h1>Storm Center</h1>
+        <div class=stormform>
+            <form method="get" action="thanks.html">
+                <div class="section">
+                    <h2>Reporter Info</h2>
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="fname">Full Name</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="text" id="fname" name="fullname" placeholder="Enter full name">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="email">Email Address</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="email" id="email" name="email" placeholder="example@gmail.com">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="phone">Phone Number</label>
+                        </div>
+                        <div class="col-75">
+                            <input type=tel id="phone" name="phonenumber" placeholder="111-222-3333">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="zip">Zip Code</label>
+                        </div>
+                        <div class="col-75">
+                            <input type=number id="zip" name="zipcode" placeholder="12345">
+                        </div>
+                    </div>
+                </div>
+                <div class="section">
+                    <h2>Storm Info</h2>
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="date">Date</label>
+                        </div>
+                        <div class="col-75">
+                            <input type=date id="date" name="date">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="type">storm type</label>
+                        </div>
+                        <div class="col-75">
+                            <select id="type" name="type">
+                                <option value="Flash Flood">Flash Flood</option>
+                                <option value="Hail">Hail</option>
+                                <option value="Hurricane">Hurricane</option>
+                                <option value="Thunderstorm">Thunderstorm</option>
+                                <option value="Tornado">Tornado</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-25">
+                            <label class="flexly" for="rating">Storm severity (1-10): &nbsp;&nbsp;&nbsp;
+                        </div>
+                        <div class="col-75">
+
+                            <input type="range" id="rating" value="5" min="1" max="10" step="1" list="tickmarks"
+                                oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                            <span id="ratingvalue">5</span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-25">
+                            <!-- need to fix default value -->
+                            <label for="area">Storm region</label>
+                        </div>
+                        <div class="col-75">
+
+                            <select id="area" name="area">
+                                <option value="Preston">select area..</option>
+                                <option value="Preston">Preston</option>
+                                <option value="Soda Springs">Soda Springs</option>
+                                <option value="Fish Haven">Fish Haven</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="section">
+                    <h2>Additional Info</h2>
+                    <div class="row">
+                        <div class="col-25">
+                            <p>user in-danger level</p>
+                        </div>
+                        <div class="col-75">
+                            <input type="radio" id="yes" name="danger" value="yes">
+                            <label for="yes">yes</label><br>
+                            <input type="radio" id="no" name="danger" value="no">
+                            <label for="no">no</label><br>
+                            <input type="radio" id="maybe" name="danger" value="maybe">
+                            <label for="maybe">maybe</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="comments">comments</label>
+                        </div>
+                        <div class="col-75">
+                            <textarea id="comments" name="comments" placeholder="Write something.."
+                                style="height:200px"></textarea>
+                        </div>
+                    </div>
+                    <div class="clearfix">
+                        <input type="submit" value="Report Weather">
+                    </div>
+                </div>
+            </form>
+        </div>
+
+
+    </main>
+
+    <div id="footerWrapper">
+        <footer>
+            &copy; Tiffany Quinlan | <span id="day"></span>, <span id="date"></span>
+        </footer>
+    </div>
+    <script src="js/javascript.js"></script>
+
+</body>
