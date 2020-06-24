@@ -133,10 +133,10 @@ div.gallery {
     margin: 20px;
   }
 
-/****Cards****/
+/* ***Cards****/
  .cards {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 /*----------- FOURM --------------*/
