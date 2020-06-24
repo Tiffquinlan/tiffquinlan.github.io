@@ -34,7 +34,6 @@ nav ul {
 }
 
 
-
 nav ul li a:hover {
     background-color: #F6D55C;
     color: #20639B;
@@ -134,10 +133,13 @@ div.gallery {
   }
 
 /* ***Cards****/
- .cards {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-}
+
+.cards {
+    column-count: 2;
+    column-gap: 30px;
+    row-gap: 50px;
+  }
+
 
 /*----------- FOURM --------------*/
 

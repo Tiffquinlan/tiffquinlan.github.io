@@ -16,11 +16,10 @@ fetch(requestURL)
                 
                 let h1 = document.createElement('h1');
                 let motto = document.createElement('h3');
-                let year = document.createElement('h3');
-                let population = document.createElement('h3');
-                let rain = document.createElement('h3');
+                let year = document.createElement('h2');
+                let population = document.createElement('h2');
+                let rain = document.createElement('h2');
                 let image = document.createElement('img');
-
 
                 h1.textContent = towns[i].name;
                 motto.textContent = towns[i].motto;
@@ -29,7 +28,6 @@ fetch(requestURL)
                 rain.textContent = "Annual Rain Fall " +towns[i].averageRainfall + "\n";
                 image.setAttribute('src', "images/"+towns[i].photo);
                 image.setAttribute('alt',  towns[i].name + ' main image');
-
 
                 card.appendChild(h1);
                 card.appendChild(motto);

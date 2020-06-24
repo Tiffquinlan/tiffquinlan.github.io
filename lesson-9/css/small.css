@@ -247,19 +247,25 @@ display: none;
     display: none;
 }
 
+
 .cards {
     text-align: center;
     margin: 10px;
     padding: 5px;
     font-size: .8rem;
-
     background-color: #F6D55C;
-    box-shadow: 5px 5px 7px #ED553B;
-    
+    box-shadow: 5px 5px 7px #ED553B; 
 }
 .cards img {
     width: 100%;
 }
+.cards h2 {
+    font-size: 1rem;
+}
+.cards h3 {
+    font-style: italic;
+}
+
 
 div#gallerywrapper{
     display: block;

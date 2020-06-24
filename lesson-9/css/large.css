@@ -29,11 +29,12 @@ div#gallerywrapper{
 .gallery:hover {box-shadow: 0 0 50px #333;}
 /* rounded corners - boxmodel */
 
-/****Cards****/
+/* ***Cards****/
 .cards {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-}
+    column-count: 3;
+    column-gap: 30px;
+  }
+
 
 /*----------- FOOTER --------------*/
 div#footerWrapper {background-color: #173F5F;}
