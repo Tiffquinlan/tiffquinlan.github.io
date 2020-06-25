@@ -46,12 +46,8 @@ a:link {
   }
   
   img {
-     width: 150px;
-     height: auto;
      border-radius: 10px;
      box-shadow: 5px 5px 7px grey;
-     float: right;
-  
   }
   
   body{
