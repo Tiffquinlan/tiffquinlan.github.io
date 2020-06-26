@@ -75,10 +75,12 @@
             </picture>
             <section class="weatherReport">
                 <h2>Weather Summary</h2>
-                <p>High: <span id="htemp">50</span> &deg;F </p>
-                <p>Low: <span id="ltemp">30</span> &deg;F </p>
-                <p>Wind: <span id="wind">6</span> mph </p>
-                <p><span id="chill"></span> </p>
+
+                <p>Currently: <span id="current-weather"></span></p>
+                <p>High: <span id="high-temp"></span> &deg;F </p>
+                <p>Wind Chill: <span id="wind-chill"></span></p>
+                <p>Humidity: <span id="humidity"></span> % </p>
+                <p>Wind Speed: <span id="wind-speed"></span> mph </p>
             </section>
         </div>
 
@@ -86,7 +88,7 @@
             <h2>Five Day Forcast</h2>
         </div>
         <section class="forecast">
-            <Div>
+            <!-- <Div>
                 <h5>Monday</h5>
                 <img src="images/rainy.jpg" alt="rainy">
                 <p>58&deg;</p>
@@ -110,18 +112,20 @@
                 <h5>Friday</h5>
                 <img src="images/snowy.jpg" alt="snowy">
                 <p>30&deg;</p>
-            </Div>
+            </Div> -->
         </section>
         <section>
             <div class="title">
                 <h2>Article</h2>
             </div>
             <div class="article">
-                <img src="images/fishing.jpg" alt="Fishing">
+                <img src="images/preston.jpg" alt="Preston">
                 <p>Be ready for hard fighting, healthy wild trout! There is no stocking on the main Big Wood River which
                     runs for 137 miles in central Idaho. Team up with a local outfitter to help you create the perfect
                     cast and amazing memories in this breathtaking location.
-                    THINGS TO KNOW
+                </p>
+                Things to know
+                <p>
                     Fish Species in the Big Wood River: Rainbow, Brown and Brook trout.
                     General season Memorial Day weekend to the end of November.
                     Some areas open year-round for catch and release.
@@ -167,5 +171,6 @@
         </footer>
     </div>
     <script src="js/javascript.js"></script>
+    <script src="js/weather.js"></script>
 
 </body>
