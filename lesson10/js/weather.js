@@ -30,7 +30,8 @@ fetch(forcastURI)
 .then((response) => response.json()).then((forecast) => {
     console.log(forecast); 
     
-// 	let mylist = forecast.list;
+	let mylist = forecast.list;
+	
 // 	let cards = mylist.filter(t=>t.dt_txt.includes('18:00:00'))
 // 	.map(t=>{ 
 // 		return `<div class="card">
