@@ -37,7 +37,7 @@ fetch(forcastURI)
 			<h1>${t.main.temp}\xB0F</h1>
 		</div>`
 	}).join('')
-	
+	console.log(forecast.dt_txt.includes('18:00:00'));
 	document.getElementById('weatherforecast').insertAdjacentHTML('beforeend',cards);
 	
 });
