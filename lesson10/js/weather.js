@@ -40,7 +40,7 @@ fetch(forcastURI)
 	
 	document.getElementById('weatherforecast').insertAdjacentHTML('beforeend',cards);
 	
-})
+});
 
 // const imagesrc = 'https://openweathermap.org/img/w/' + jsObject.weather[0].icon + '.png';  // note the concatenation
 // const desc = jsObject.weather[0].description;  // note how we reference the weather array
