@@ -39,9 +39,9 @@ fetch(forcastURI)
 		</div>`
 	}).join('')
 	//console.log(forecast.dt_txt.includes('18:00:00'));
-	//document.getElementById('weatherforecast').insertAdjacentHTML('beforeend',cards);
+	document.getElementById('weatherforecast').insertAdjacentHTML('beforeend',cards);
 	
-	document.getElementById('weatherforecast').appendChild(cards);
+// 	document.getElementById('weatherforecast').appendChild(cards);
 	
 // 	for (i=0; i<mylist.length; i++) {
 //           var time = mylist[i].dt_txt;
