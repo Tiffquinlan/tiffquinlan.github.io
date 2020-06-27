@@ -28,6 +28,16 @@ const forcastURI = "https://api.openweathermap.org/data/2.5/forecast?id=5604473&
 fetch(forcastURI)  
 .then((response) => response.json())  
 .then((forecast) => { console.log(forecast)});
+    
+	let mylist = forecast.list;
+	let cards = mylist.filter(t=>t.dt_txt.includes('18:00:00'))
+	.map(t=>{ 
+		return `<div class="card">
+			<h1>${t.main.temp}\xB0F</h1>
+		</div>`
+	}).join('')
+	
+	document.getElementById('weatherforecast').insertAdjacentHTML('beforeend',cards);
 
 // const imagesrc = 'https://openweathermap.org/img/w/' + jsObject.weather[0].icon + '.png';  // note the concatenation
 // const desc = jsObject.weather[0].description;  // note how we reference the weather array
