@@ -37,10 +37,20 @@ fetch(forcastURI)
 			<h1>${t.main.temp}\xB0F</h1>
 		</div>`
 	}).join('')
-	console.log(forecast.dt_txt.includes('18:00:00'));
-	document.getElementById('weatherforecast').insertAdjacentHTML('beforeend',cards);
+	//console.log(forecast.dt_txt.includes('18:00:00'));
+	//document.getElementById('weatherforecast').insertAdjacentHTML('beforeend',cards);
+	
+	document.getElementById('weatherforecast').appendChild(cards);
+	
 	
 });
+
+        //   let theDay = document.createElement("div");
+        //   theDay.appendChild(theDayName);
+        //   theDay.appendChild(theIcon);
+        //   theDay.appendChild(theTemp);
+    
+        //  document.getElementById('weatherforecast').appendChild(theDay);
 
 // const imagesrc = 'https://openweathermap.org/img/w/' + jsObject.weather[0].icon + '.png';  // note the concatenation
 // const desc = jsObject.weather[0].description;  // note how we reference the weather array
