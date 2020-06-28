@@ -24,9 +24,9 @@ fetch(apiURL)
 
 });
 
-let date = new Date(); 
-const days = ["Sun", "Mon", "Tues", "Wed", "Thru", "Fri", "Sat"]; 
-const todayDayNumber = date.getDay();
+let d = new Date(); 
+const dayshort = ["Sun", "Mon", "Tues", "Wed", "Thru", "Fri", "Sat"]; 
+const todayDayNumber = d.getDay();
 let forecastDayNumber = todayDayNumber;
 console.log(forecastDayNumber);
 
@@ -45,7 +45,7 @@ fetch(forcastURI)
                 forecastDayNumber=0;
               }
 		return `<div class="card">
-			<h3>${days[d.getDay()]}</h3>
+			<h3>${dayshort[forecastDayNumber]}</h3>
 			<h3>${t.main.temp}\xB0F</h3>
 		</div>`
 	}).join('')
