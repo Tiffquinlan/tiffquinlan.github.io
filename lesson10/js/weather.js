@@ -24,9 +24,9 @@ fetch(apiURL)
 
 });
 
-let d = new Date(); 
+let t = new Date(); 
 const dayshort = ["Sun", "Mon", "Tues", "Wed", "Thru", "Fri", "Sat"]; 
-const todayDayNumber = d.getDay();
+const todayDayNumber = t.getDay();
 let forecastDayNumber = todayDayNumber;
 console.log(forecastDayNumber);
 
@@ -34,10 +34,8 @@ const forcastURI = "https://api.openweathermap.org/data/2.5/forecast?id=5604473&
 
 fetch(forcastURI)
 .then((response) => response.json()).then((forecast) => {
-    console.log(forecast); 
-    
+    console.log(forecast);
 	let mylist = forecast.list;
-	
 	let cards = mylist.filter(t=>t.dt_txt.includes('18:00:00'))
 	.map(t=>{
 		 forecastDayNumber += 1;
@@ -51,8 +49,6 @@ fetch(forcastURI)
 	}).join('')
 	//console.log(forecast.dt_txt.includes('18:00:00'));
 	document.getElementById('weatherforecast').insertAdjacentHTML('beforeend',cards);
-	
-// 	
     
 //             let iconcode = weatherInfo.list[i].weather[0].icon;
 //             let iconPath = "//openweathermap.org/img/w/" + iconcode + ".png";
