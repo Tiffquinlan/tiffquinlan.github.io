@@ -24,6 +24,42 @@ fetch(apiURL)
 
 });
 
+let t = new Date(); 
+const dayshort = ["Sun", "Mon", "Tues", "Wed", "Thru", "Fri", "Sat"]; 
+const todayDayNumber = t.getDay();
+let forecastDayNumber = todayDayNumber;
+console.log(forecastDayNumber);
+
+const forcastURI = "https://api.openweathermap.org/data/2.5/forecast?id=5604473&appid=0e4d31ccfabb22eece86dc1453da7105&units=imperial";
+
+fetch(forcastURI)
+.then((response) => response.json()).then((forecast) => {
+    console.log(forecast);
+	let mylist = forecast.list;
+	let cards = mylist.filter(t=>t.dt_txt.includes('18:00:00'))
+	.map(t=>{
+		 forecastDayNumber += 1;
+              if (forecastDayNumber===7){
+                forecastDayNumber=0;
+              }
+		return `<div class="card">
+			<h3>${dayshort[forecastDayNumber]}</h3>
+			<h3>${t.main.temp}\xB0F</h3>
+		</div>`
+	}).join('')
+	//console.log(forecast.dt_txt.includes('18:00:00'));
+	document.getElementById('weatherforecast').insertAdjacentHTML('beforeend',cards);
+    
+//             let iconcode = weatherInfo.list[i].weather[0].icon;
+//             let iconPath = "//openweathermap.org/img/w/" + iconcode + ".png";
+//             console.log(iconPath);
+//             let iconAlt = weatherInfo.list[i].weather[0].description;
+//             let theIcon = document.createElement("img");
+//             theIcon.src = iconPath;
+//             theIcon.alt = iconAlt;
+});
+
+ 
 
 // const imagesrc = 'https://openweathermap.org/img/w/' + jsObject.weather[0].icon + '.png';  // note the concatenation
 // const desc = jsObject.weather[0].description;  // note how we reference the weather array

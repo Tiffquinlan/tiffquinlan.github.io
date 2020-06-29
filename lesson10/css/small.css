@@ -96,9 +96,6 @@ div.hideme{
 header {
     background-color: #3CAEA3;
     color: black;
-    /* display: grid;
-    grid-template-columns: 1fr; */
-    /* padding: 10px; */
     padding-top: 15px;
     margin: 0;
 }
@@ -126,7 +123,6 @@ header h2 {
 /*----------- NAVIGATION --------------*/
 nav {
     background-color: #173F5F;
-    /* text-align: center; */
     padding-top: 0;
 }
 
@@ -161,7 +157,6 @@ nav ul li.active a {
     padding: .5rem;
     text-decoration: none;
     font-size: .9rem;
-    /* text-align: center; */
 }
 
 .navigation a:hover {
