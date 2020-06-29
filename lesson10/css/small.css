@@ -220,8 +220,16 @@ main smpic img {
     font-size: .75rem;
 }
 
-.forecast {
-display: none;
+#weatherforecast{
+    margin: auto;
+    text-align: center;
+    width: 150px;
+}
+.card{
+    background-color: #F6D55C;
+    border-style: solid;
+    border-color: #173F5F;
+    margin: 10px;
 }
 
 .article{

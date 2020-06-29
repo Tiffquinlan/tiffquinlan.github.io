@@ -42,19 +42,21 @@ fetch(forcastURI)
               if (forecastDayNumber===7){
                 forecastDayNumber=0;
               }
+              let iconcode = t.weather[0].icon;
+              let iconPath = "//openweathermap.org/img/w/" + iconcode + ".png";
+              console.log(iconPath);
+              let iconAlt = t.weather[0].description;
+            
 		return `<div class="card">
 			<h3>${dayshort[forecastDayNumber]}</h3>
-			<h3>${t.main.temp}\xB0F</h3>
+            <h3>${t.main.temp}\xB0F</h3>
+            <img src="${iconPath}" alt="${iconAlt}">
+
 		</div>`
 	}).join('')
 	//console.log(forecast.dt_txt.includes('18:00:00'));
 	document.getElementById('weatherforecast').insertAdjacentHTML('beforeend',cards);
     
-//             let iconcode = weatherInfo.list[i].weather[0].icon;
-//             let iconPath = "//openweathermap.org/img/w/" + iconcode + ".png";
-//             console.log(iconPath);
-//             let iconAlt = weatherInfo.list[i].weather[0].description;
-//             let theIcon = document.createElement("img");
 //             theIcon.src = iconPath;
 //             theIcon.alt = iconAlt;
 });
