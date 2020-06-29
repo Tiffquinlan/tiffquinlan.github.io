@@ -85,7 +85,16 @@ main avatar img{
   }
   
 
-  section.forecast {
+  #weatherforecast{
+    margin: initial;
+    display: flex;
+}
+.card{
+    /* display: block; change state in small view */
+    flex: 1 1 auto;
+}
+
+  /* section.forecast {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     background-color: #F6D55C;
@@ -106,7 +115,7 @@ main avatar img{
     }
     section.forecast div h5{
     color: #173F5F;
-    }
+    } */
 
     .article img{
         width: 300px;
