@@ -29,6 +29,7 @@ const dayshort = ["Sun", "Mon", "Tues", "Wed", "Thru", "Fri", "Sat"];
 const todayDayNumber = t.getDay();
 let forecastDayNumber = todayDayNumber;
 console.log(forecastDayNumber);
+<<<<<<< HEAD
 
 const forcastURI = "https://api.openweathermap.org/data/2.5/forecast?id=5604473&appid=0e4d31ccfabb22eece86dc1453da7105&units=imperial";
 
@@ -68,3 +69,36 @@ fetch(forcastURI)
 // document.getElementById('imagesrc').textContent = imagesrc;  // informational specification only
 // document.getElementById('icon').setAttribute('src', imagesrc);  // focus on the setAttribute() method
 // document.getElementById('icon').setAttribute('alt', desc);
+=======
+
+const forcastURI = "https://api.openweathermap.org/data/2.5/forecast?id=5604473&appid=0e4d31ccfabb22eece86dc1453da7105&units=imperial";
+
+fetch(forcastURI)
+.then((response) => response.json()).then((forecast) => {
+    console.log(forecast);
+	let mylist = forecast.list;
+	let cards = mylist.filter(t=>t.dt_txt.includes('18:00:00'))
+	.map(t=>{
+		 forecastDayNumber += 1;
+              if (forecastDayNumber===7){
+                forecastDayNumber=0;
+              }
+              let iconcode = t.weather[0].icon;
+              let iconPath = "//openweathermap.org/img/w/" + iconcode + ".png";
+              console.log(iconPath);
+              let iconAlt = t.weather[0].description;
+            
+		return `<div class="card">
+			<h3>${dayshort[forecastDayNumber]}</h3>
+            <h3>${t.main.temp}\xB0F</h3>
+            <img src="${iconPath}" alt="${iconAlt}">
+
+		</div>`
+	}).join('')
+	
+	document.getElementById('weatherforecast').insertAdjacentHTML('beforeend',cards);
+    
+});
+
+ 
+>>>>>>> 0d288639d59aa978a162512b9bdb790f51a7efe2
