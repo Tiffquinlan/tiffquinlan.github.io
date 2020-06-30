@@ -27,13 +27,17 @@ div#gallerywrapper{
     grid-template-columns: 1fr 1fr 1fr;
 }
 .gallery:hover {box-shadow: 0 0 50px #333;}
-/* rounded corners - boxmodel */
+
+#weatherforecast{
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
 
 /* ***Cards****/
 .cards {
     column-count: 3;
     column-gap: 30px;
   }
+
 
 
 /*----------- FOOTER --------------*/

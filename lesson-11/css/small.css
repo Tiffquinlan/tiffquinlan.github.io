@@ -14,6 +14,7 @@ html {
 
 
 
+
     .container {
         display: inline-block;
         cursor: pointer;
@@ -44,10 +45,6 @@ html {
     }
 
 
-
-
-  
-
 /* ---- COLORS----- 
     Dark Blue   #173F5F
     Light Blue  #20639B
@@ -55,9 +52,6 @@ html {
     Yellow      #F6D55C
     Orange      #ED553B
 */
-
-
-
 
 
 /*----------- BODY --------------*/
@@ -73,7 +67,6 @@ body a{color: #ED553B;}
 body h1,h2,h3 {
     font-family: 'Patrick Hand', cursive;
 }
-
 
 
 /*----------- BANNER --------------*/
@@ -117,7 +110,6 @@ header h2 {
     font-size: .7rem;
     font-family: 'Noto Serif JP', serif;
 }
-
 
 
 /*----------- NAVIGATION --------------*/
@@ -203,37 +195,62 @@ main smpic img {
     width: 150px;
 }
 
-.hero {
-    margin: 10px auto;
-    position: relative;
-    width: 100%;
+section.hero {
+    position: relative; 
 }
 
+.herophoto img{
+    width: 100%;
+    height: 350;
+    object-fit: cover;
+}
 
 .weatherReport {
     position: absolute;
-    top: 2px;
+    top: 0px;
     left: 30px;
     padding: .2rem;
-    background-color: #3CAEA3;
-    opacity: .9;
-    font-size: .75rem;
+    background-color:#dfdfdf;
+    opacity: .8;
+    font-size: .60rem;
+    box-shadow: 4px 4px 10px #333333;
 }
 
-#weatherforecast{
-    margin: auto;
+#data{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+}
+#col1{
+    text-align: right;
+    color:#20639B;
+}
+
+#col2{
+    margin-left: 3px;
+    color: #173F5F;
+    font-weight: bold;
+}
+
+#weatherforecast{  
+    display: grid;
+    grid-template-columns: 1fr;
     text-align: center;
-    width: 150px;
 }
 .card{
     background-color: #F6D55C;
-    border-style: solid;
     border-color: #173F5F;
+    border-style: solid;
     margin: 10px;
+} 
+.card .title{
+    background-color: #173F5F;
+    margin: 0;
+    line-height: 30px;
+    color: #F6D55C;
 }
 
 .article{
-    /* border-style: solid; */
     border-width: 1px;
 }
 .article img{
@@ -305,7 +322,6 @@ div.gallery {
         margin: 8px 0;
         box-sizing: border-box;
         border: 1px solid #F6D55C;
-        /* outline: none; */
       }
       
       input[type=text]:focus, input[type=number]:focus, input[type=tel]:focus, input[type=email]:focus {

@@ -1,6 +1,6 @@
-// Preston ID, town ID: 5604473
+// Preston City ID = 5604473
 // API key : 0e4d31ccfabb22eece86dc1453da7105
-//api.openweathermap.org/data/2.5/weather?id=5604473&appid=0e4d31ccfabb22eece86dc1453da7105
+
 
 const apiURL = "https://api.openweathermap.org/data/2.5/weather?id=5604473&appid=0e4d31ccfabb22eece86dc1453da7105&units=imperial";
 fetch(apiURL)
@@ -48,7 +48,7 @@ fetch(forcastURI)
         let iconAlt = t.weather[0].description;
 
         return `<div class="card">
-			<h3>${dayshort[forecastDayNumber]}</h3>
+            <h2 class=title>${dayshort[forecastDayNumber]}</h2>
             <h3>${t.main.temp}\xB0F</h3>
             <img src="${iconPath}" alt="${iconAlt}">
 
