@@ -21,7 +21,6 @@ fetch(apiURL)
     }else{
         document.getElementById('wind-chill').textContent = "none"
     }
-
 });
 
 let t = new Date(); 
