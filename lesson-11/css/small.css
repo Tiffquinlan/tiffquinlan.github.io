@@ -265,14 +265,13 @@ section.hero {
     display: none;
 }
 
-
 .cards {
     text-align: center;
     margin: 10px;
     padding: 5px;
     font-size: .8rem;
     background-color: #F6D55C;
-    box-shadow: 5px 5px 7px #ED553B; 
+    box-shadow: 5px 5px 7px #ED553B;
 }
 .cards img {
     width: 100%;
@@ -282,16 +281,16 @@ section.hero {
 }
 .cards h3 {
     font-style: italic;
+
 }
 
 #events{
-    align-self: center;
     color: #dfdfdf;
     background-color: #173F5F;
     text-align: center;
     border: 5px solid #3CAEA3;
     padding: 20px;
-    margin: 10px;
+    margin: auto;
 }
 
 div#gallerywrapper{
@@ -300,7 +299,8 @@ div#gallerywrapper{
 
 div.gallery {
     margin: 5px;
-    border: 1px solid #ccc;
+    background-color: #3CAEA3;
+    border: 3px solid #173F5F;
   }
 
   div.gallery img {
@@ -314,7 +314,10 @@ div.gallery {
     
   }
 
+
+
   /*----------- FOURM --------------*/
+
 .stormform{
     margin: .2rem;
     background-color: #dfdfdf;
@@ -366,7 +369,8 @@ div.gallery {
     input[type=submit] {
         background-color: #F6D55C;
         color:#20639B;
-        padding: 8px 10px;
+        padding: 10px 10px;
+        margin: 10px;
         border: 1px solid #173F5F;
         border-radius: 4px;
         cursor: pointer;

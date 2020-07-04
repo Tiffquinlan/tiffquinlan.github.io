@@ -126,12 +126,18 @@ div.gallery {
 
 /*----------- FOURM --------------*/
 
+.stormform{
+    margin: auto;
+    width: 60%;
+    }
+
+
 input[type=text], input[type=number], input[type=tel], input[type=email]{
-    width: 50%;
+    width: 70%;
   }
 
 textarea {
-    width: 50%;
+    width: 70%;
   }
 
 
