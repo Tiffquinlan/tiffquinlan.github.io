@@ -101,6 +101,10 @@ main avatar img{
         display: grid;
     }
 
+    #events{
+        text-align: center;
+        width: 70%;
+    }
     
 div#gallerywrapper{
     display: grid;

@@ -22,6 +22,7 @@ fetch(requestURL)
                 let image = document.createElement('img');
 
                 h1.textContent = towns[i].name;
+                console.log("name " + towns[i].name);
                 motto.textContent = towns[i].motto;
                 year.textContent = "Year Founded " +towns[i].yearFounded + "\n";
                 population.textContent = "Population " +towns[i].currentPopulation + "\n";
@@ -36,7 +37,6 @@ fetch(requestURL)
                 card.appendChild(rain);
                 card.appendChild(image);
             }
-
             document.querySelector('div.cards').appendChild(card);
         }
     });

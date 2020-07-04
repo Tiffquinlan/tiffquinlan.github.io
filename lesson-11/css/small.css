@@ -13,8 +13,6 @@ html {
 }
 
 
-
-
     .container {
         display: inline-block;
         cursor: pointer;
@@ -286,6 +284,15 @@ section.hero {
     font-style: italic;
 }
 
+#events{
+    align-self: center;
+    color: #dfdfdf;
+    background-color: #173F5F;
+    text-align: center;
+    border: 5px solid #3CAEA3;
+    padding: 20px;
+    margin: 10px;
+}
 
 div#gallerywrapper{
     display: block;
