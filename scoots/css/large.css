@@ -1,0 +1,46 @@
+/* 64em is also 1028px (if basefont is 16px) */
+@media only screen and (min-width: 64rem) {
+
+    header, nav, main, footer {
+        max-width: 64rem;
+        margin:auto;
+    }
+
+/*----------- BODY --------------*/
+
+
+
+/*----------- HEADER --------------*/
+div#headerWrapper {background-color: #3CAEA3;}
+
+
+
+/*----------- NAVIGATION --------------*/
+div#navWrapper {background-color: #173F5F;}
+
+
+
+/*----------- MAIN --------------*/
+
+div#gallerywrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.gallery:hover {box-shadow: 0 0 50px #333;}
+
+#weatherforecast{
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+/* ***Cards****/
+.cards {
+    column-count: 3;
+    column-gap: 30px;
+  }
+
+
+
+/*----------- FOOTER --------------*/
+div#footerWrapper {background-color: #173F5F;}
+    
+} /* end of media query */

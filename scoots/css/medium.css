@@ -1,0 +1,135 @@
+/* 35em is also 640 (if basefont is 16px) */
+@media only screen and (min-width: 40rem) {
+
+
+/*----------- BODY --------------*/
+
+
+
+/*----------- HEADER --------------*/
+header {
+    grid-template-columns: 1fr 3fr;
+    align-items: center;
+}
+header img {
+    width: 100px;
+    margin-left: 1rem;
+}
+header h1{font-size: 2rem;}
+header h2{font-size: 1.2rem;}
+
+
+
+/*----------- NAVIGATION --------------*/
+
+
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+.navigation {
+    display: flex;
+}
+.navigation li {
+    display: block; /* change state in small view */
+    flex: 1 1 auto;
+}
+.navigation a {
+    text-align: center;
+}
+
+.ham{
+    display: none;
+}
+/*----------- MAIN --------------*/
+
+main avatar img{
+    width: 150px;
+}
+
+.weatherReport {
+    padding: .5rem;
+    font-size: 1rem;
+}
+
+
+.column {
+    float: left;
+    width: 50%;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+
+  #weatherforecast{
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+    .article img{
+        width: 300px;
+        float: right;
+        margin: 10px;
+    }
+    .contact{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .contact iframe{
+        display: grid;
+    }
+
+    #events{
+        text-align: center;
+        width: 70%;
+    }
+    
+div#gallerywrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+div.gallery {
+    margin: 20px;
+  }
+
+/* ***Cards****/
+
+.cards {
+    column-count: 2;
+    column-gap: 30px;
+    row-gap: 50px;
+  }
+
+
+/*----------- FOURM --------------*/
+
+.stormform{
+    margin: auto;
+    width: 60%;
+    }
+
+
+input[type=text], input[type=number], input[type=tel], input[type=email]{
+    width: 70%;
+  }
+
+textarea {
+    width: 70%;
+  }
+
+
+
+
+/*----------- FOOTER --------------*/
+    
+} /* end of media query */
