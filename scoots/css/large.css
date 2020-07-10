@@ -12,8 +12,9 @@
 
 /*----------- HEADER --------------*/
 div#headerWrapper {background-color: #3CAEA3;}
-
-
+header img {
+    width: 180px;
+}
 
 /*----------- NAVIGATION --------------*/
 div#navWrapper {background-color: #173F5F;}
