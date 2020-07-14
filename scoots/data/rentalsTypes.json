@@ -1,0 +1,27 @@
+{
+	"rentals": [{
+		"name": "Honda Metropolitan",
+		"photo": "hondaMetropolitan.jpg",
+		"type": "Honda Motor Scooters",
+		"engine": "49cc",
+		"people": 1,
+		"Reservation": [{
+				"time": "Half Day",
+				"price": "$ 20"
+			},
+			{
+				"time": "Full Day",
+				"price": "$ 30"
+			}
+		],
+		"walkin": [{
+				"time": "Half Day",
+				"price": "$ 25"
+			},
+			{
+				"time": "Full Day",
+				"price": "$ 35"
+			}
+		]
+	}]
+}

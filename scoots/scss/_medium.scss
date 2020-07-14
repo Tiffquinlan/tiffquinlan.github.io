@@ -1,6 +1,12 @@
 /* 35em is also 640 (if basefont is 16px) */
 @media only screen and (min-width: 40rem) {
 
+/* https://wireframe.cc/cARbmG */
+
+header, nav, main, footer {
+    max-width: 45rem;
+    margin:auto;
+}
 
 /*----------- BODY --------------*/
 
@@ -13,7 +19,9 @@
 } */
 header img {
     width: 150px;
-    margin-left: 1rem;
+    margin-left: 20px;
+    padding-top: 30px;
+    padding-bottom: 10px;
 }
 header h1{font-size: 2rem;}
 header h2{font-size: 1.2rem;}
@@ -22,7 +30,7 @@ header h2{font-size: 1.2rem;}
 
 /*----------- NAVIGATION --------------*/
 
-
+div#navWrapper {background-color: #20639B;}
 
 nav ul {
     list-style-type: none;
@@ -40,6 +48,7 @@ nav ul {
 }
 .navigation a {
     text-align: center;
+    font-size: 1.2rem;
 }
 
 .ham{
@@ -56,8 +65,13 @@ nav ul {
     font-size: 4rem;
 }
 
+.colunms{
+    column-count: 3;
+}
+
+
 .advertisement {
-    margin-left: 20px;
+    /* margin-left: 20px; */
 }
 
 

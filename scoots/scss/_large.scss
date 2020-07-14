@@ -11,17 +11,22 @@
 
 
 /*----------- HEADER --------------*/
-div#headerWrapper {background-color: #3CAEA3;}
+
+
 header img {
     width: 180px;
 }
 
 /*----------- NAVIGATION --------------*/
-div#navWrapper {background-color: #173F5F;}
+
 
 
 
 /*----------- MAIN --------------*/
+
+.herotext{
+    text-align: center;
+}
 
 div#gallerywrapper{
     display: grid;
@@ -42,6 +47,6 @@ div#gallerywrapper{
 
 
 /*----------- FOOTER --------------*/
-div#footerWrapper {background-color: #173F5F;}
+div#footerWrapper {background-color: #20639B;}
     
 } /* end of media query */

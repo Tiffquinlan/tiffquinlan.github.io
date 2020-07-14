@@ -4,24 +4,15 @@ html {
     -ms-text-size-adjust: 100%;
 }
 
+/* https://wireframe.cc/94QwjC */
+
 /*----------- apply a natural box layout model to all elements --------------*/
-* 
-{
+
+/* {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-}
-
-/* font-family: 'Bangers', cursive;
-font-family: 'Noto Sans HK', sans-serif; */
-
-
-/*colors
-light blue  #139fec
-dark Blue   #06599f
-golden      #e5a110
-*/
-
+} */
 
 /*----------- BODY --------------*/
 
@@ -29,7 +20,7 @@ body {
     padding: 5px;
     font-size: 16px;
     font-family: 'Noto Serif JP', serif;
-    color: #173F5F;
+    color: #06599f;
 }
 body a{color: #e5a110;}
 
@@ -40,15 +31,19 @@ body h1,h2,h3 {
 
 /*----------- BANNER --------------*/
 div#banner{
-    background-color: #e5a110;
+    background-color: #20639B;
+    color: #e5a110;
+    font-family: 'Coda Caption', sans-serif;
+    padding: 1px;
     margin: 0;
-    padding: 3px;
     text-align: center;
-    font-size: .6rem;
+    font-size: 20px;
 }
+
 div.showme{
     display: block; 
 }
+
 div.hideme{
     display: none; 
 }
@@ -56,21 +51,13 @@ div.hideme{
 
 /*----------- HEADER --------------*/
 header {
-    background-image:
-      radial-gradient(
-        circle at bottom right,
-        #139fec,
-        #f1f1f1 70%
-      );
-    padding-top: 0;
-    color: black;
     padding-top: 15px;
     margin: 0;
 }
 
 header img {
     float: left;
-    width: 100px;
+    width: 140px;
 }
 
 header h1 {
@@ -122,10 +109,9 @@ nav ul li.active a {
 
 .navigation a {
     display: block;
-    color:#dfdfdf;
+    color: white;
     padding: .5rem;
     text-decoration: none;
-    font-size: .9rem;
 }
 
 .navigation a:hover {
@@ -155,10 +141,11 @@ section.hero {
     margin-left: 5px;
     width: 100%;
     padding: 10px;
+    color: #173F5F;
 }
 
 .herotext h1 {
-    font-family: 'Bangers', cursive;
+    font-family: 'Coda Caption', sans-serif;
     font-size: 2.5rem;
 }
 
@@ -181,6 +168,40 @@ width:100%;
   }
 
 
+/* ---------rentalCard--------- */
+.rentalCard {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+  }
+  
+  .price {
+    color: grey;
+    font-size: 22px;
+  }
+
+  .rentalCard img{
+      height: 200px;
+      
+  }
+  
+  .rentalCard button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #20639B;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+  }
+  
+  .rentalCard button:hover {
+    opacity: 0.7;
+  }
 
   /*----------- FOURM --------------*/
 

@@ -8,12 +8,8 @@
     <meta name="description" content="another whether site" />
     <meta name="author" content="Tiffany Quinlan" />
     <link rel="shortcut icon" href="images/favicon.ico">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/small.css">
-    <link rel="stylesheet" href="css/medium.css">
-    <link rel="stylesheet" href="css/large.css">
-    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Noto+Sans+HK:wght@300;700&display=swap"
-        rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Coda+Caption:wght@800&family=Noto+Sans+HK:wght@400;700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/53224be697.js" crossorigin="anonymous"></script>
 
 </head>
@@ -21,12 +17,14 @@
 <body>
     <!-- HEADER HERE -->
 
+    
     <div id="banner">
-        <p>Summer Special</p>
+        <p>$$ - Limited Time Offer - Cruises Discounts - $$</p>
     </div>
-
+    <div id="headerWrapper">
 
     <header class="clearfix">
+        
         <div>
             <img src="images/smLogo.png" alt="logo">
         </div>
@@ -34,11 +32,11 @@
             <a class='ham' href="#">&#9776;</a>
         </div>
     </header>
-
+</div>
 
 
     <!-- NAVIGATION HERE -->
-
+    <div id="navWrapper">
     <nav>
         <ul class="navigation">
             <li class="active"><a href="index.html">Home</a></li>
@@ -48,33 +46,58 @@
             <li><a href="Contact.html">Contact</a></li>
         </ul>
     </nav>
+</div>
 
 
 
     <!-- CONTENT HERE -->
+
+    <section class="hero">
+        <picture class='herophoto'>
+            <source srcset="images/hero450.jpg" media="(max-width: 450px)">
+            <source srcset="images/hero800.jpg" media="(min-width: 450px) and (max-width: 800px)">
+            <source srcset="images/hero1200.jpg" media="(min-width: 800px)">
+            <img src="/Cozumel/beachcliff.jpg" alt="beach">
+
+        </picture>
+        <div class="herotext">
+            <h2>Take your</h2>
+            <h1>Adventure</h1>
+            <h2>to the trails</h2>
+        </div>
+    </section>
+
     <main>
 
-        <section class="hero">
-            <picture class='herophoto'>
-                <source srcset="images/hero450.jpg" media="(max-width: 450px)">
-                <source srcset="images/hero800.jpg" media="(min-width: 450px) and (max-width: 800px)">
-                <source srcset="images/hero1200.jpg" media="(min-width: 800px)">
-                <img src="/Cozumel/beachcliff.jpg" alt="beach">
-
-            </picture>
-            <div class="herotext">
-                <h2>Take your</h2>
-                <h1>Adventure</h1>
-                <h2>to the trails</h2>
-            </div>
-        </section>
+        
         <div class="advertisement">
         <h1>Cozumel Rentals</h1>
         <a href="#" class="button">Reserve Now</a>
         <h2>Rentals avalible starting at 30$ a day</h2>
     </div>
-    <img src="images/scooter.jpg" alt="Scooter">
-
+    <div class= colunms>
+        <div class="rentalCard">
+            <img src="images/scooter.jpg" alt="Scooter" style="width:100%">
+            <h1>Scooter</h1>
+            <p class="price">$19.99 / Day</p>
+            <p>check out more prices by clicking below</p>
+            <p><button>Scooter Rentals</button></p>
+        </div>
+        <div class="rentalCard">
+            <img src="images/Cozumel/atvonbeach.jpg" alt="ATV" style="width:100%">
+            <h1>ATV</h1>
+            <p class="price">$29.99 / Day</p>
+            <p>check out more prices by clicking below</p>
+            <p><button>ATV Rentals</button></p>
+        </div>
+        <div class="rentalCard">
+            <img src="images/Cozumel/roadtobeach.jpg" alt="Jeep" style="width:100%">
+            <h1>Jeep</h1>
+            <p class="price">$39.99 / Day</p>
+            <p>check out more prices by clicking below</p>
+            <p><button>Jeep Rentals</button></p>
+        </div>
+    </div>
 
         <Section class="icons">
             <a href="https://twiter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
@@ -88,13 +111,13 @@
     </main>
 
 
-
+    <div id="footerWrapper">
     <footer>
 
         &copy; Tiffany Quinlan | <span id="day"></span>, <span id="date"></span> | <p>Created my free logo at 
             <a href="https://logomakr.com/" target="_blank">LogoMakr.com</a> </p>
     </footer>
-
+</div>
     <script src="js/javascript.js"></script>
 
 </body>
