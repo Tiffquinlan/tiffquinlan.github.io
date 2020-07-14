@@ -1,5 +1,5 @@
 
-const requestURL = 'data/rentalTypes.json';
+const requestURL = 'data/rentals.json';
 
 fetch(requestURL)
     .then(function (response) {
