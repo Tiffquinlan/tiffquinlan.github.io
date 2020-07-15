@@ -8,37 +8,50 @@ fetch(requestURL)
     .then(function (jsonObject) {
         console.table(jsonObject); // temporary checking for valid response and data parsing
 
+        const rentals = jsonObject['rentals'];
 
-        const rental = jsonObject['rental'];
-
-        for (let i = 0; i < rental.length; i++) {
-            let item = document.createElement('section');
-            // if (towns[i].name == "Fish Haven"||towns[i].name =="Preston"||towns[i].name =="Soda Springs") {
+        let item = document.createElement('section');
+        for (let i = 0; i < rentals.length; i++) {
+            // if (rentals[i].type == "Honda Motor Scooters") {
                 
-                let name = document.createElement('div.rental');
+            let card = document.createElement('div.card');
                 let h1 = document.createElement('h1');
                 // let type = document.createElement('h3');
-                // let engine = document.createElement('h2');
-                // let people = document.createElement('h2');
-                // let image = document.createElement('img');
+                let description = document.createElement('h3');
+                let people = document.createElement('h3');
+                let prices = document.createElement('h3')
+                let image = document.createElement('img');
 
-                h1.textContent = rental[i].name;
-                console.log("name " + towns[i].name);
-                // motto.textContent = towns[i].motto;
-                // year.textContent = "Year Founded " +towns[i].yearFounded + "\n";
-                // population.textContent = "Population " +towns[i].currentPopulation + "\n";
-                // rain.textContent = "Annual Rain Fall " +towns[i].averageRainfall + "\n";
-                // image.setAttribute('src', "images/"+towns[i].photo);
-                // image.setAttribute('alt',  towns[i].name + ' main image');
 
-                item.appendChild(name);  
+                // type.textContent = rentals[i].type;
+                h1.textContent = rentals[i].name;
+                console.log("name " + rentals[i].name);
+                description.textContent =  rentals[i].description + "\n";
+                people.textContent = "Max Persons " +rentals[i].people + "\n";
+                prices.setAttribute = rentals[i].reservation[0].time +" "+ rentals[i].reservation[0].price;
+                image.setAttribute('src', "images/"+rentals[i].photo);
+                image.setAttribute('alt',  rentals[i].name + ' picture');
+
+                item.appendChild(card);  
+                // item.appendChild(type);
                 item.appendChild(h1);
-                // card.appendChild(motto);
-                // card.appendChild(year);
-                // card.appendChild(population);
-                // card.appendChild(rain);
-                // card.appendChild(image);
+                item.appendChild(description);
+                item.appendChild(people);
+                item.appendChild(prices);
+                item.appendChild(image);
+
             // }
+
             document.querySelector('div.items').appendChild(item);
         }
+        for (let i = 0; i < rentals.length; i++){
+            let rentalCard = document.createElement('section');
+
+
+
+        }
+
+
     });
+
+  

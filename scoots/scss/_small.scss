@@ -203,6 +203,46 @@ width:100%;
     opacity: 0.7;
   }
 
+
+  /*----------- ITEMS --------------*/
+
+  .items {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+  }
+  div.card{
+   border: 2px solid red ;
+    
+  }
+  
+  .price {
+    color: grey;
+    font-size: 22px;
+  }
+
+  .items img{
+      height: 200px;
+      
+  }
+  
+  .items button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #20639B;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+  }
+  
+  .items button:hover {
+    opacity: 0.7;
+  }
+
   /*----------- FOURM --------------*/
 
 

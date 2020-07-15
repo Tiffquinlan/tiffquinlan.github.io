@@ -478,6 +478,37 @@ main img {
 .rentalCard button:hover {
   opacity: 0.7; }
 
+/*----------- ITEMS --------------*/
+.items {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center; }
+
+div.card {
+  border: 2px solid red; }
+
+.price {
+  color: grey;
+  font-size: 22px; }
+
+.items img {
+  height: 200px; }
+
+.items button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #20639B;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px; }
+
+.items button:hover {
+  opacity: 0.7; }
+
 /*----------- FOURM --------------*/
 .icons {
   display: flex;
@@ -577,9 +608,9 @@ footer a {
     /* margin-left: 20px; */ }
 
   /*----------- FOURM --------------*/
-  /*----------- FOOTER --------------*/ }
-@media only screen and (min-width: 560px) {
-  /* end of media query */ }
+  /*----------- FOOTER --------------*/
+  div#footerWrapper {
+    background-color: #20639B; } }
 /* end of media query */
 @media only screen and (min-width: 1028px) {
   /* 64em is also 1028px (if basefont is 16px) */ }
@@ -613,9 +644,7 @@ footer a {
     column-count: 3;
     column-gap: 30px; }
 
-  /*----------- FOOTER --------------*/
-  div#footerWrapper {
-    background-color: #20639B; } }
+  /*----------- FOOTER --------------*/ }
 @media only screen and (min-width: 1028px) {
   /* end of media query */ }
 /* end of media query */
