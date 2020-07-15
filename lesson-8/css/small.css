@@ -259,10 +259,17 @@ div.gallery {
 /*----------- FOURM --------------*/
 .stormform{
 margin: .2rem;
-background-color: #dfdfdf;
-border: 1px solid #173F5F;
-padding: 1rem;
-border-radius: 10px;
+/* background-color: #dfdfdf; */
+/* padding: 1rem; */
+/* border-radius: 10px; */
+}
+
+.section{
+    border: 1px solid #173F5F;
+    background-color: #dfdfdf;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px;
 }
 
 input[type=text], input[type=number], input[type=tel], input[type=email]{
@@ -271,7 +278,6 @@ input[type=text], input[type=number], input[type=tel], input[type=email]{
     margin: 8px 0;
     box-sizing: border-box;
     border: 1px solid #F6D55C;
-    /* outline: none; */
   }
   
   input[type=text]:focus, input[type=number]:focus, input[type=tel]:focus, input[type=email]:focus {
@@ -313,7 +319,7 @@ input[type=submit] {
     border: 1px solid #173F5F;
     border-radius: 4px;
     cursor: pointer;
-    float: right;
+    margin-top: 30px;
 }
  
 
