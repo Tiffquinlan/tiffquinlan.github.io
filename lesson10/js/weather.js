@@ -46,13 +46,13 @@ fetch(forcastURI)
         let iconPath = "//openweathermap.org/img/w/" + iconcode + ".png";
         console.log(iconPath);
         let iconAlt = t.weather[0].description;
+        let temp = Math.round(t.main.temp);
 
         return `<div class="card">
-			<h3>${dayshort[forecastDayNumber]}</h3>
-            <h3>${t.main.temp}\xB0F</h3>
-            <img src="${iconPath}" alt="${iconAlt}">
-
-		</div>`
+          <h2>${dayshort[forecastDayNumber]}</h2>
+          <img src="${iconPath}" alt="${iconAlt}">
+          <h3>${temp}\xB0F</h3>
+        </div>`
       }).join('')
 
     document.getElementById('weatherforecast').insertAdjacentHTML('beforeend', cards);

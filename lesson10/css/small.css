@@ -203,9 +203,10 @@ main smpic img {
     width: 150px;
 }
 
-.hero {
-    margin: 10px auto;
+.hero{
     position: relative;
+}
+.hero img {
     width: 100%;
 }
 
@@ -220,16 +221,28 @@ main smpic img {
     font-size: .75rem;
 }
 
-#weatherforecast{
-    margin: auto;
+.forecast{
+    width: 80%; 
+    margin: auto; 
     text-align: center;
-    width: 150px;
 }
+
 .card{
-    background-color: #F6D55C;
-    border-style: solid;
-    border-color: #173F5F;
-    margin: 10px;
+    background-color: #dfdfdf;
+    border: 1px solid  #6c8091;
+}
+.card img{
+    width: 60px;
+}
+
+.card h2{
+    margin: 0px;
+    padding: 5px;
+    color: #F6D55C;
+    background-color: #173F5F;
+}
+.card h3{
+    padding: 0px;
 }
 
 .article{
