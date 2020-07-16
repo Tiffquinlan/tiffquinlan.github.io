@@ -255,7 +255,9 @@ section.hero {
 .contact iframe{
     display: none;
 }
-
+.cards town{
+    background-color: aqua;
+}
 .cards {
     text-align: center;
     margin: 10px;

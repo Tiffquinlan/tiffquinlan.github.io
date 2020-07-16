@@ -1,0 +1,25 @@
+body {
+    margin: auto;
+    width: 70%;
+}
+
+header{
+    color: white;
+    background-color: darkcyan;
+    text-align: center;
+    padding: 10px;
+}
+
+main{
+    margin: auto;
+    width: 60%;
+    display: block;
+    padding: 50px;
+}
+
+footer{
+    color: white;
+    background-color: darkcyan;
+    text-align: center;
+    padding: 10px;
+}

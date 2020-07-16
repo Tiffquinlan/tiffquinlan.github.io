@@ -94,28 +94,6 @@ main avatar img{
     flex: 1 1 auto;
 }
 
-  /* section.forecast {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    background-color: #F6D55C;
-    
-    }
-    section.forecast div {
-        
-        text-align: center;
-        border: 1px solid #173F5F;
-        color: #173F5F;
-    }
-    section.forecast div img{
-        float: none;
-        width: 5rem;
-        border-radius: 20px;  
-        border-style: solid;
-        border-color: #173F5F;
-    }
-    section.forecast div h5{
-    color: #173F5F;
-    } */
 
     .article img{
         width: 300px;

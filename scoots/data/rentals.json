@@ -2,7 +2,7 @@
 	"rentals": [
 		{
 			"name": "Honda Metropolitan",
-			"photo": "hondaMetropolitan.jpg",
+			"photo": "data/hondaMetropolitan.jpg",
 			"type": "Honda Motor Scooters",
 			"description": "49cc",
 			"people": 1,
@@ -29,7 +29,7 @@
 		},
 		{
 			"name": "Honda Dio",
-			"photo": "hondadio.jpg",
+			"photo": "images/hondadio.jpg",
 			"type": "Honda Motor Scooters",
 			"description": "110cc",
 			"people": 2,
@@ -56,7 +56,7 @@
 		},
 		{
 			"name": "Honda PCX150",
-			"photo": "Hondapcx.jpg",
+			"photo": "images/Hondapcx.jpg",
 			"type": "Honda Motor Scooters",
 			"description": "149cc",
 			"people": 2,
@@ -83,7 +83,7 @@
 		},
 		{
 			"name": "Honda Pioneer0",
-			"photo": "hondapioneer.jpg",
+			"photo": "images/hondapioneer.jpg",
 			"type": "ATV Side-by-Side",
 			"description": "1000",
 			"people": 4,

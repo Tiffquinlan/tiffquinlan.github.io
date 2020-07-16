@@ -14,7 +14,7 @@ fetch(requestURL)
             let card = document.createElement('section');
             if (towns[i].name == "Fish Haven"||towns[i].name =="Preston"||towns[i].name =="Soda Springs") {
                 
-                let town = document.createElement('div.town');
+                let card = document.createElement('town');
                 let h1 = document.createElement('h1');
                 let motto = document.createElement('h3');
                 let year = document.createElement('h2');

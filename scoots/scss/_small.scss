@@ -206,13 +206,14 @@ width:100%;
 
   /*----------- ITEMS --------------*/
 
-  .items {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    max-width: 300px;
+  .items{
+    // box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    // max-width: 300px;
+    border: 2px solid red ;
     margin: auto;
     text-align: center;
   }
-  div.card{
+  .items article{
    border: 2px solid red ;
     
   }
