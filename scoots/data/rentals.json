@@ -2,7 +2,7 @@
 	"rentals": [
 		{
 			"name": "Honda Metropolitan",
-			"photo": "data/hondaMetropolitan.jpg",
+			"photo": "rentals/hondaMetropolitan.jpg",
 			"type": "Honda Motor Scooters",
 			"description": "49cc",
 			"people": 1,
@@ -29,7 +29,7 @@
 		},
 		{
 			"name": "Honda Dio",
-			"photo": "images/hondadio.jpg",
+			"photo": "rentals//hondadio.jpg",
 			"type": "Honda Motor Scooters",
 			"description": "110cc",
 			"people": 2,
@@ -56,7 +56,7 @@
 		},
 		{
 			"name": "Honda PCX150",
-			"photo": "images/Hondapcx.jpg",
+			"photo": "rentals/Hondapcx.jpg",
 			"type": "Honda Motor Scooters",
 			"description": "149cc",
 			"people": 2,
@@ -82,8 +82,8 @@
 			]
 		},
 		{
-			"name": "Honda Pioneer0",
-			"photo": "images/hondapioneer.jpg",
+			"name": "Honda Pioneer",
+			"photo": "rentals/hondapioneer.jpg",
 			"type": "ATV Side-by-Side",
 			"description": "1000",
 			"people": 4,
@@ -110,7 +110,7 @@
 		},
 		{
 			"name": "4-door Jeep Wrangler",
-			"photo": "jeepwragler4.jpg",
+			"photo": "rentals/jeepwragler4.jpg",
 			"type": "Jeep Rentals",
 			"description": "manual with A/C",
 			"people": 5,
@@ -137,7 +137,7 @@
 		},
 		{
 			"name": "2-door Jeep Wrangler",
-			"photo": "jeepwragler2.jpg",
+			"photo": "rentals/jeepwragler2.jpg",
 			"type": "Jeep Rentals",
 			"description": "open air - manual",
 			"people": 4,

@@ -11,11 +11,9 @@ fetch(requestURL)
 
             let item = document.createElement('section');
             for (let i = 0; i < rentals.length; i++) {
-                // if (rentals[i].type == "Honda Motor Scooters") {
 
-                // let card = document.createElement('info');
-                let item = document.createElement('card')
-                let info = document.createElement('article');
+                let item = document.createElement('article');
+                let info = document.createElement('card');
 
 
                 let h1 = document.createElement('h1');
@@ -31,14 +29,14 @@ fetch(requestURL)
                 console.log("name " + rentals[i].name);
                 description.textContent = rentals[i].description + "\n";
                 people.textContent = "Max Persons " + rentals[i].people + "\n";
-                prices.setAttribute = rentals[i].reservation[0].time + " " + rentals[i].reservation[0].price;
+                prices.textContent = rentals[i].reservation[0].time + " " + rentals[i].reservation[0].price;
                 image.setAttribute('src', "images/" + rentals[i].photo);
                 image.setAttribute('alt', rentals[i].name + ' picture');
 
-                info.appendChild(type);
+                // info.appendChild(type);
                 info.appendChild(h1);
-                info.appendChild(description);
-                info.appendChild(people);
+                // info.appendChild(description);
+                // info.appendChild(people);
                 info.appendChild(prices);
 
                 item.appendChild(info);
@@ -46,10 +44,4 @@ fetch(requestURL)
                 document.querySelector('div.items').appendChild(item);
             }
         }
-        // for (let i = 0; i < rentals.length; i++){
-        //     let rentalCard = document.createElement('section');
-
-
-
-        // }
     );

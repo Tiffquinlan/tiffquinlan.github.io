@@ -17,6 +17,13 @@ header img {
     width: 180px;
 }
 
+.herophoto img{
+    width: 100%;
+    height: 700px;
+    object-fit: cover;
+    object-position: 50% 80%;
+}
+
 /*----------- NAVIGATION --------------*/
 
 
@@ -39,11 +46,15 @@ div#gallerywrapper{
 }
 
 /* ***Cards****/
-.cards {
-    column-count: 3;
-    column-gap: 30px;
-  }
+// .cards {
+//  grid-template-columns: 1fr 1fr 1fr;
+//   }
 
+   /*----------- ITEMS --------------*/
+  .items{
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 30px 30px;
+  }
 
 
 /*----------- FOOTER --------------*/

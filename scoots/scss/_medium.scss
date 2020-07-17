@@ -74,6 +74,20 @@ nav ul {
     /* margin-left: 20px; */
 }
 
+/* ---------cards--------- */
+.cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+
+
+  /*----------- ITEMS --------------*/
+.items{
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px 30px;
+  }
+
 
 /*----------- FOURM --------------*/
 
@@ -81,3 +95,4 @@ nav ul {
 /*----------- FOOTER --------------*/
 div#footerWrapper {background-color: #20639B;}
 } 
+
