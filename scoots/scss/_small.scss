@@ -29,8 +29,14 @@ body a{color: #e5a110;}
 body h1,h2,h3 {
     font-family: 'Noto Sans HK', sans-serif;
 }
+body a{
+    color: #20639B;
+    text-decoration: none;
 
-
+}
+body a:hover{
+color:#e5a110
+}
 
 /*----------- BANNER --------------*/
 div#banner{
@@ -43,41 +49,55 @@ div#banner{
     font-size: 20px;
 }
 
+div.phone{
+    text-align: center;
+    padding: 2px;
+    margin: 10px auto;
+    font-size: 25px;
+    color: #dfdfdf;
+    border: 2px solid #06599f;
+    // background-color: #20639B;
+    border-radius: 20px;
+    width: 150px;
+}
+
 div.showme{
     display: block; 
 }
 
 div.hideme{
-    display: none; 
+    display: none;
 }
+
 
 
 /*----------- HEADER --------------*/
 header {
     padding-top: 15px;
-    margin: 0;
+    border-bottom: 4px solid #20639B;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
 header img {
-    float: left;
-    width: 140px;
+    width: 100%;
 }
 
-header h1 {
-    margin: 0;
-    font-size: 1.3rem;
-}
+
 
 .ham{
     /* position: absolute; */
     color: #173F5F;
     float: right;
-    margin: 10px;
-    padding: 8px;
+    margin-right: 20px;
+    padding: 5px;
     text-decoration: none;
     border: 2px solid #20639B;
     border-radius: 7px;
+    font-size: 25px;
 }
+
+
 
 /*----------- NAVIGATION --------------*/
 nav {
@@ -118,8 +138,7 @@ nav ul li.active a {
 }
 
 .navigation a:hover {
-    background-color: #139fec;
-    color: #20639B;
+    color: #e5a110;
 }
 
 .responsive li {
@@ -127,6 +146,21 @@ nav ul li.active a {
     margin: 0;
 }
 
+.payicons{
+    // display: flex;
+    // justify-content: space-evenly;
+    font-size: 30px; 
+    margin: 20px;
+    float: right;
+}
+
+.payicons a{
+    color: #20639B;
+}
+
+.payicons a:hover{
+color:#e5a110
+}
 
 /*----------- MAIN --------------*/
 
@@ -266,21 +300,40 @@ main{
   /*----------- FOURM --------------*/
 
 
-.icons{
+
+
+   /*----------- CONTACT --------------*/
+.contact{
+    display: grid;
+    grid-gap: 20px;
+}
+.place{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    background-color: white;
+    padding: 10px;
+}
+.info i{
+    margin: 10px;
+}
+.info i :hover{
+    color: #e5a110
+}
+
+
+
+.socialicons{
     display: flex;
     justify-content: space-evenly;
     font-size: 30px; 
     margin: 20px;
 }
-.icons img{
-    width:30px;
-}
-.icons a{
+
+.socialicons a{
     color: #20639B;
 }
 
-.icons a:hover{
-color:#139fec;
+.socialicons a:hover{
+color:#e5a110
 }
 
 

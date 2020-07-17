@@ -10,13 +10,21 @@ header, nav, main, footer {
 
 /*----------- BODY --------------*/
 
+.col{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
 
+.phone{
+    display: none;
+}
 
 /*----------- HEADER --------------*/
-/* header {
-    grid-template-columns: 1fr 3fr;
-    align-items: center;
-} */
+
+
+header {
+    border-bottom: None;
+} 
 header img {
     width: 150px;
     margin-left: 20px;
@@ -54,6 +62,7 @@ nav ul {
 .ham{
     display: none;
 }
+
 /*----------- MAIN --------------*/
 
 
@@ -90,6 +99,26 @@ nav ul {
 
 
 /*----------- FOURM --------------*/
+
+/*----------- CONTACT --------------*/
+.contact{
+    display: grid;
+    grid-gap: 20px;
+}
+.place{
+    background-color: white;
+    padding: 10px;
+    // display: grid;
+}
+
+.info{
+    margin: 10px;
+}
+iframe{
+    width: 100%;
+    height: 300px;
+}
+
 
 
 /*----------- FOOTER --------------*/

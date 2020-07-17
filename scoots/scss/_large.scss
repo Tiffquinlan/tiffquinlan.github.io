@@ -19,7 +19,7 @@ header img {
 
 .herophoto img{
     width: 100%;
-    height: 700px;
+    height: 600px;
     object-fit: cover;
     object-position: 50% 80%;
 }
@@ -55,6 +55,14 @@ div#gallerywrapper{
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 30px 30px;
   }
+
+
+/*----------- CONTACT --------------*/
+.contact{
+    grid-template-columns: 1fr 1fr;
+}
+
+
 
 
 /*----------- FOOTER --------------*/
