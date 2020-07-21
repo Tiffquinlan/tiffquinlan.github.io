@@ -1,121 +1,102 @@
-<h3>Reserve</h3>
-<div class=stormform>
-    <form method="get" action="thanks.html">
-        <div class="section">
-            <h2>Reporter Info</h2>
-            <div class="row">
-                <div class="col-25">
-                    <label for="fname">Full Name</label>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scoots</title>
+    <meta name="description" content="another whether site" />
+    <meta name="author" content="Tiffany Quinlan" />
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Noto+Serif+JP&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/53224be697.js" crossorigin="anonymous"></script>
+</head>
+
+
+<body>
+
+    <main>
+        <h1>Reserve</h1>
+        <div class="contactform">
+            <form method="get" action="thanks.html">
+                <div class="section">
+                    <h2>Reservation Info</h2>
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="date">Date</label>
+                        </div>
+                        <div class="col-75">
+                            <input type=date id="date" name="date">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="type">Reservation Type</label>
+                        </div>
+                        <div class="col-75">
+                            <select id="type" name="type">
+                                <option value="Scooter">Scooter</option>
+                                <option value="ATV">ATV</option>
+                                <option value="Jeep">Jeep</option>
+                            </select>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-75">
-                    <input type="text" id="fname" name="fullname" placeholder="Enter full name">
+
+                <div class="section">
+                    <h2>User Info</h2>
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="fname">Full Name</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="text" id="fname" name="fullname" placeholder="Enter full name">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="email">Email Address</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="email" id="email" name="email" placeholder="example@gmail.com">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="phone">Phone Number</label>
+                        </div>
+                        <div class="col-75">
+                            <input type=tel id="phone" name="phonenumber" placeholder="111-222-3333">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="zip">Zip Code</label>
+                        </div>
+                        <div class="col-75">
+                            <input type=number id="zip" name="zipcode" placeholder="12345">
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-25">
-                    <label for="email">Email Address</label>
+                <div class="section">
+                    <h2>Additional Info</h2>
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="comments">Comments</label>
+                        </div>
+                        <div class="col-75">
+                            <textarea id="comments" name="comments" placeholder="any additional comments..."
+                                style="height:200px"></textarea>
+                        </div>
+                    </div>
+                    <div class="clearfix">
+                        <input type="submit" value="Reserve Now">
+                    </div>
                 </div>
-                <div class="col-75">
-                    <input type="email" id="email" name="email" placeholder="example@gmail.com">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-25">
-                    <label for="phone">Phone Number</label>
-                </div>
-                <div class="col-75">
-                    <input type=tel id="phone" name="phonenumber" placeholder="111-222-3333">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-25">
-                    <label for="zip">Zip Code</label>
-                </div>
-                <div class="col-75">
-                    <input type=number id="zip" name="zipcode" placeholder="12345">
-                </div>
-            </div>
+            </form>
         </div>
-        <div class="section">
-            <h2>Storm Info</h2>
-            <div class="row">
-                <div class="col-25">
-                    <label for="date">Date</label>
-                </div>
-                <div class="col-75">
-                    <input type=date id="date" name="date">
-                </div>
-            </div>
 
-            <div class="row">
-                <div class="col-25">
-                    <label for="type">storm type</label>
-                </div>
-                <div class="col-75">
-                    <select id="type" name="type">
-                        <option value="Flash Flood">Flash Flood</option>
-                        <option value="Hail">Hail</option>
-                        <option value="Hurricane">Hurricane</option>
-                        <option value="Thunderstorm">Thunderstorm</option>
-                        <option value="Tornado">Tornado</option>
-                    </select>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-25">
-                    <label class="flexly" for="rating">Storm severity (1-10): &nbsp;&nbsp;&nbsp;
-                </div>
-                <div class="col-75">
-
-                    <input type="range" id="rating" value="5" min="1" max="10" step="1" list="tickmarks"
-                        oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
-                    <span id="ratingvalue">5</span>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-25">
-                    <!-- need to fix default value -->
-                    <label for="area">Storm region</label>
-                </div>
-                <div class="col-75">
-
-                    <select id="area" name="area">
-                        <option value="Preston">select area..</option>
-                        <option value="Preston">Preston</option>
-                        <option value="Soda Springs">Soda Springs</option>
-                        <option value="Fish Haven">Fish Haven</option>
-                    </select>
-                </div>
-            </div>
-        </div>
-        <div class="section">
-            <h2>Additional Info</h2>
-            <div class="row">
-                <div class="col-25">
-                    <p>user in-danger level</p>
-                </div>
-                <div class="col-75">
-                    <input type="radio" id="yes" name="danger" value="yes">
-                    <label for="yes">yes</label><br>
-                    <input type="radio" id="no" name="danger" value="no">
-                    <label for="no">no</label><br>
-                    <input type="radio" id="maybe" name="danger" value="maybe">
-                    <label for="maybe">maybe</label>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-25">
-                    <label for="comments">comments</label>
-                </div>
-                <div class="col-75">
-                    <textarea id="comments" name="comments" placeholder="Write something.."
-                        style="height:200px"></textarea>
-                </div>
-            </div>
-            <div class="clearfix">
-                <input type="submit" value="Report Weather">
-            </div>
-        </div>
-    </form>
-</div>
+    </main>
+</body>

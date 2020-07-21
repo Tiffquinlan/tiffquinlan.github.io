@@ -50,11 +50,73 @@ div#gallerywrapper{
 //  grid-template-columns: 1fr 1fr 1fr;
 //   }
 
-   /*----------- ITEMS --------------*/
+/*----------- ITEMS --------------*/
   .items{
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 30px 30px;
   }
+
+
+/*----------- FORM --------------*/
+
+  .stormform{
+    margin: .2rem;
+    background-color: #dfdfdf;
+    border: 1px solid #173F5F;
+    padding: 1rem;
+    border-radius: 10px;
+    }
+    
+    input[type=text], input[type=number], input[type=tel], input[type=email]{
+        width: 100%;
+        padding: 8px 8px;
+        margin: 8px 0;
+        box-sizing: border-box;
+        border: 1px solid #F6D55C;
+      }
+      
+      input[type=text]:focus, input[type=number]:focus, input[type=tel]:focus, input[type=email]:focus {
+        background-color: #F6D55C;
+        color: #173F5F;
+      }
+    
+      textarea {
+        width: 100%;
+        height: 150px;
+        padding: 12px 20px;
+        box-sizing: border-box;
+        border: 2px solid #ccc;
+        border-radius: 4px;
+        background-color: #f8f8f8;
+        font-size: 16px;
+        resize: none;
+      }
+      textarea:focus {
+      background-color:#F6D55C;
+      border: 2px solid #173F5F;
+    }
+    
+      label {
+        padding: 12px 12px 12px 0;
+        display: inline-block;
+      }
+      #ratingvalue {
+        margin: 0 10px;
+    }
+    
+    .clearfix {
+        overflow: auto;
+      }
+    input[type=submit] {
+        background-color: #F6D55C;
+        color:#20639B;
+        padding: 10px 10px;
+        margin: 10px;
+        border: 1px solid #173F5F;
+        border-radius: 4px;
+        cursor: pointer;
+        float: right;
+    }
 
 
 /*----------- CONTACT --------------*/
