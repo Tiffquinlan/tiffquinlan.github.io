@@ -208,6 +208,10 @@ main{
     border-radius: 5px;
   }
 
+  .button:hover{
+      color: #173F5F;
+  }
+
 /* ---------cards--------- */
 .cards{
     display: grid;
@@ -300,11 +304,11 @@ main{
   /*----------- FOURM --------------*/
 
   .contactform{
-    margin: 200px;
-    background-color: #dfdfdf;
+    background-color: #139fec;
+    color: #dfdfdf;
     border: 1px solid #173F5F;
-    padding: 10px;
-    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
     }
     
     input[type=text], input[type=number], input[type=tel], input[type=email]{
