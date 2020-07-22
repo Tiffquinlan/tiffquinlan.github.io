@@ -333,7 +333,9 @@ body {
 body a {
   color: #e5a110; }
 
-body h1, h2, h3 {
+body h1,
+h2,
+h3 {
   font-family: 'Noto Sans HK', sans-serif; }
 
 body a {
@@ -355,7 +357,7 @@ div#banner {
 
 div.phone {
   text-align: center;
-  padding: 2px;
+  padding: 10px;
   margin: 10px auto;
   font-size: 25px;
   color: #dfdfdf;
@@ -465,7 +467,7 @@ main {
   padding: 5%; }
 
 .button {
-  background-color: #eb3d12;
+  background-color: #e55e10;
   border: none;
   color: white;
   padding: 15px 32px;
@@ -477,7 +479,35 @@ main {
   cursor: pointer;
   border-radius: 5px; }
 
-/* ---------cards--------- */
+.button:hover {
+  color: #173F5F; }
+
+/* ----------- Table ----------- */
+.chart {
+  margin: auto;
+  display: grid;
+  grid-gap: 20px 10px;
+  width: 100%;
+  margin-bottom: 20px; }
+
+.chart td, .chart th {
+  border: 1px solid #ddd;
+  padding: 8px; }
+
+.chart tr:first-child {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #20639B;
+  color: white; }
+
+.chart tr:nth-child(even) {
+  background-color: #f2f2f2; }
+
+.chart tr:hover {
+  background-color: #ddd; }
+
+/* --------- Cards --------- */
 .cards {
   display: grid;
   grid-gap: 30px; }
@@ -548,6 +578,74 @@ div.items article {
   opacity: 0.7; }
 
 /*----------- FOURM --------------*/
+.contactform {
+  background-color: #20639B;
+  border: 1px solid #173F5F;
+  margin-bottom: 20px;
+  border-radius: 20px; }
+
+.reservationform {
+  background-color: #20639B;
+  border: 1px solid #173F5F;
+  margin-bottom: 20px;
+  border-radius: 20px; }
+
+.section {
+  margin: 20px;
+  padding: 30px;
+  background-color: #dfdfdf;
+  border-radius: 20px; }
+
+input[type=text],
+input[type=number],
+input[type=tel],
+input[type=email] {
+  width: 100%;
+  padding: 8px 8px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border-radius: 4px;
+  border: 1px solid #06599f; }
+
+input[type=text]:focus,
+input[type=number]:focus,
+input[type=tel]:focus,
+input[type=email]:focus {
+  background-color: #ccc;
+  color: #20639B; }
+
+textarea {
+  width: 100%;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  font-size: 16px;
+  resize: none; }
+
+textarea:focus {
+  background-color: #ccc;
+  border: 2px solid #173F5F; }
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block; }
+
+.clearfix {
+  overflow: auto; }
+
+input[type=submit] {
+  background-color: #e5a110;
+  color: #20639B;
+  padding: 10px 10px;
+  margin: 10px;
+  border: 1px solid #173F5F;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right; }
+
 /*----------- CONTACT --------------*/
 .contact {
   display: grid;
@@ -607,6 +705,14 @@ footer a {
     display: grid;
     grid-template-columns: 1fr 1fr; }
 
+  .col1 {
+    display: grid;
+    grid-template-columns: auto 50%; }
+
+  .col2 {
+    display: grid;
+    grid-template-columns: 175px auto; }
+
   .phone {
     display: none; }
 
@@ -664,6 +770,10 @@ footer a {
   .advertisement {
     /* margin-left: 20px; */ }
 
+  /* ----------- Table ----------- */
+  .chart {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); }
+
   /* ---------cards--------- */
   .cards {
     display: grid;
@@ -675,6 +785,12 @@ footer a {
     grid-gap: 30px 30px; }
 
   /*----------- FOURM --------------*/
+  input[type=text], input[type=number], input[type=tel], input[type=email] {
+    width: 100%; }
+
+  textarea {
+    width: 100%; }
+
   /*----------- CONTACT --------------*/
   .contact {
     display: grid;
@@ -733,6 +849,60 @@ footer a {
   .items {
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 30px 30px; }
+
+  /*----------- FORM --------------*/
+  .stormform {
+    margin: .2rem;
+    background-color: #dfdfdf;
+    border: 1px solid #173F5F;
+    padding: 1rem;
+    border-radius: 10px; }
+
+  input[type=text], input[type=number], input[type=tel], input[type=email] {
+    width: 100%;
+    padding: 8px 8px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px solid #F6D55C; }
+
+  input[type=text]:focus, input[type=number]:focus, input[type=tel]:focus, input[type=email]:focus {
+    background-color: #F6D55C;
+    color: #173F5F; }
+
+  textarea {
+    width: 100%;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    font-size: 16px;
+    resize: none; }
+
+  textarea:focus {
+    background-color: #F6D55C;
+    border: 2px solid #173F5F; }
+
+  label {
+    padding: 12px 12px 12px 0;
+    display: inline-block; }
+
+  #ratingvalue {
+    margin: 0 10px; }
+
+  .clearfix {
+    overflow: auto; }
+
+  input[type=submit] {
+    background-color: #F6D55C;
+    color: #20639B;
+    padding: 10px 10px;
+    margin: 10px;
+    border: 1px solid #173F5F;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right; }
 
   /*----------- CONTACT --------------*/
   .contact {

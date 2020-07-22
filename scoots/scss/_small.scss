@@ -20,26 +20,33 @@ body {
     font-size: 16px;
     font-family: 'Noto Serif JP', serif;
     color: #06599f;
-    background: rgb(225,225,226);
-    background: linear-gradient(154deg, rgba(255,255,255,1) 28%, rgba(225,225,226,1) 70%, rgba(245,245,245,1) 98%);
+    background: rgb(225, 225, 226);
+    background: linear-gradient(154deg, rgba(255, 255, 255, 1) 28%, rgba(225, 225, 226, 1) 70%, rgba(245, 245, 245, 1) 98%);
 
 }
-body a{color: #e5a110;}
 
-body h1,h2,h3 {
+body a {
+    color: #e5a110;
+}
+
+body h1,
+h2,
+h3 {
     font-family: 'Noto Sans HK', sans-serif;
 }
-body a{
+
+body a {
     color: #20639B;
     text-decoration: none;
 
 }
-body a:hover{
-color:#e5a110
+
+body a:hover {
+    color: #e5a110
 }
 
 /*----------- BANNER --------------*/
-div#banner{
+div#banner {
     background-color: #20639B;
     color: #e5a110;
     font-family: 'Coda Caption', sans-serif;
@@ -49,7 +56,7 @@ div#banner{
     font-size: 20px;
 }
 
-div.phone{
+div.phone {
     text-align: center;
     padding: 10px;
     margin: 10px auto;
@@ -61,11 +68,11 @@ div.phone{
     width: 150px;
 }
 
-div.showme{
-    display: block; 
+div.showme {
+    display: block;
 }
 
-div.hideme{
+div.hideme {
     display: none;
 }
 
@@ -85,7 +92,7 @@ header img {
 
 
 
-.ham{
+.ham {
     /* position: absolute; */
     color: #173F5F;
     float: right;
@@ -101,7 +108,7 @@ header img {
 
 /*----------- NAVIGATION --------------*/
 nav {
-    background-color:#20639B;
+    background-color: #20639B;
     padding-top: 0;
 }
 
@@ -118,7 +125,7 @@ nav {
 }
 
 nav ul li.active a {
-    background-color:#139fec;
+    background-color: #139fec;
     color: #dfdfdf;
 }
 
@@ -146,30 +153,30 @@ nav ul li.active a {
     margin: 0;
 }
 
-.payicons{
+.payicons {
     // display: flex;
     // justify-content: space-evenly;
-    font-size: 30px; 
+    font-size: 30px;
     margin: 20px;
     float: right;
 }
 
-.payicons a{
+.payicons a {
     color: #20639B;
 }
 
-.payicons a:hover{
-color:#e5a110
+.payicons a:hover {
+    color: #e5a110
 }
 
 /*----------- MAIN --------------*/
 
 
 section.hero {
-    position: relative; 
+    position: relative;
 }
 
-.herophoto img{
+.herophoto img {
     width: 100%;
 }
 
@@ -187,15 +194,16 @@ section.hero {
     font-size: 2.5rem;
 }
 
-main img{
-width:100%;
+main img {
+    width: 100%;
 }
-main{
+
+main {
     padding: 5%;
 }
 
 .button {
-    background-color: #eb3d12;
+    background-color: #e55e10;
     border: none;
     color: white;
     padding: 15px 32px;
@@ -206,14 +214,45 @@ main{
     margin: 4px 2px;
     cursor: pointer;
     border-radius: 5px;
-  }
+}
 
-  .button:hover{
-      color: #173F5F;
-  }
+.button:hover {
+    color: #173F5F;
+}
 
-/* ---------cards--------- */
-.cards{
+
+
+/* ----------- Table ----------- */
+
+
+.chart {
+    // border-collapse: collapse;
+    margin: auto;
+    display: grid;
+    grid-gap: 20px 10px;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .chart td, .chart th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  .chart tr:first-child{
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #20639B;
+    color: white;
+}
+
+  .chart tr:nth-child(even){background-color: #f2f2f2;}
+  
+  .chart tr:hover {background-color: #ddd;}
+
+
+/* --------- Cards --------- */
+.cards {
     display: grid;
     grid-gap: 30px;
 }
@@ -226,21 +265,21 @@ main{
     text-align: center;
     font-family: arial;
     background-color: white;
-  }
-  
-  .price {
+}
+
+.price {
     color: grey;
     font-size: 22px;
-  }
+}
 
-  .card img{
+.card img {
     width: 100%;
     height: 200px;
     object-fit: cover;
 
-  }
-  
-  .card button {
+}
+
+.card button {
     border: none;
     outline: 0;
     padding: 12px;
@@ -250,42 +289,42 @@ main{
     cursor: pointer;
     width: 100%;
     font-size: 18px;
-  }
-  
-  .card button:hover {
+}
+
+.card button:hover {
     opacity: 0.7;
-  }
+}
 
 
-  /*----------- ITEMS --------------*/
+/*----------- ITEMS --------------*/
 
-  .items{
+.items {
     margin: auto;
     display: grid;
     grid-gap: 20px 20px;
-    
-  }
-  div.items article{
+
+}
+
+div.items article {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     // border: 1px solid red;
     max-width: 350px;
     text-align: center;
-    background-color:white;
+    background-color: white;
     padding: 10px
-    
-  }
-  
-  .price {
+}
+
+.price {
     color: grey;
     font-size: 22px;
-  }
+}
 
-  .items img{
-      height: 200px;
-      
-  }
-  
-  .items button {
+.items img {
+    height: 200px;
+
+}
+
+.items button {
     border: none;
     outline: 0;
     padding: 12px;
@@ -295,104 +334,130 @@ main{
     cursor: pointer;
     width: 100%;
     font-size: 18px;
-  }
-  
-  .items button:hover {
+}
+
+.items button:hover {
     opacity: 0.7;
-  }
+}
 
-  /*----------- FOURM --------------*/
+/*----------- FOURM --------------*/
 
-  .contactform{
-    background-color: #139fec;
-    color: #dfdfdf;
+.contactform {
+    background-color: #20639B;
     border: 1px solid #173F5F;
-    padding: 20px;
     margin-bottom: 20px;
-    }
-    
-    input[type=text], input[type=number], input[type=tel], input[type=email]{
-        width: 100%;
-        padding: 8px 8px;
-        margin: 8px 0;
-        box-sizing: border-box;
-        border: 1px solid #F6D55C;
-      }
-      
-      input[type=text]:focus, input[type=number]:focus, input[type=tel]:focus, input[type=email]:focus {
-        background-color: #F6D55C;
-        color: #173F5F;
-      }
-    
-      textarea {
-        width: 100%;
-        height: 150px;
-        padding: 12px 20px;
-        box-sizing: border-box;
-        border: 2px solid #ccc;
-        border-radius: 4px;
-        background-color: #f8f8f8;
-        font-size: 16px;
-        resize: none;
-      }
-      textarea:focus {
-      background-color:#F6D55C;
-      border: 2px solid #173F5F;
-    }
-      label {
-        padding: 12px 12px 12px 0;
-        display: inline-block;
-      }
- 
-    
-    .clearfix {
-        overflow: auto;
-      }
-    input[type=submit] {
-        background-color: #F6D55C;
-        color:#20639B;
-        padding: 10px 10px;
-        margin: 10px;
-        border: 1px solid #173F5F;
-        border-radius: 4px;
-        cursor: pointer;
-        float: right;
-    }
+    border-radius: 20px;
+}
+
+.reservationform {
+    background-color: #20639B;
+    border: 1px solid #173F5F;
+    margin-bottom: 20px;
+    border-radius: 20px;
+}
+
+.section {
+    margin: 20px;
+    padding: 30px;
+    background-color: #dfdfdf;
+    border-radius: 20px;
+}
+
+input[type=text],
+input[type=number],
+input[type=tel],
+input[type=email] {
+    width: 100%;
+    padding: 8px 8px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border-radius: 4px;
+    border: 1px solid #06599f;
+}
+
+input[type=text]:focus,
+input[type=number]:focus,
+input[type=tel]:focus,
+input[type=email]:focus {
+    background-color: #ccc;
+    color: #20639B;
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    font-size: 16px;
+    resize: none;
+}
+
+textarea:focus {
+    background-color: #ccc;
+    border: 2px solid #173F5F;
+}
+
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+
+.clearfix {
+    overflow: auto;
+}
+
+input[type=submit] {
+    background-color: #e5a110;
+    color: #20639B;
+    padding: 10px 10px;
+    margin: 10px;
+    border: 1px solid #173F5F;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
 
 
 
-   /*----------- CONTACT --------------*/
-.contact{
+/*----------- CONTACT --------------*/
+.contact {
     display: grid;
     grid-gap: 20px;
 }
-.place{
+
+.place {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     background-color: white;
     padding: 10px;
 }
-.info i{
+
+.info i {
     margin: 10px;
 }
-.info i :hover{
+
+.info i :hover {
     color: #e5a110
 }
 
 
 
-.socialicons{
+.socialicons {
     display: flex;
     justify-content: space-evenly;
-    font-size: 30px; 
+    font-size: 30px;
     margin: 20px;
 }
 
-.socialicons a{
+.socialicons a {
     color: #20639B;
 }
 
-.socialicons a:hover{
-color:#e5a110
+.socialicons a:hover {
+    color: #e5a110
 }
 
 
@@ -405,12 +470,12 @@ footer {
     font-size: .8rem;
 }
 
-footer a{
+footer a {
     color: #e5a110;
     text-decoration: none;
-  }
+}
 
-  
+
 /*----- Clearfix: Force an Element not to collapse -----*/
 .clearfix:after {
     content: "";

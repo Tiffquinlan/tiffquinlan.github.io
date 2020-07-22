@@ -51,11 +51,6 @@
         <main>
             <h1>Reservations</h1>
 
-            <div class="center">
-                <a href="half-form.html" class="button"><i class="fa fa-calendar"> Book Half Day</i></a>
-                <a href="full-form.html" class="button"><i class="fa fa-calendar"> Book Full Day</i></a>
-            </div>
-
             <Section class="payicons">
                 <a href="https://pay.google.com/about/" target="_blank"><i class="fab fa-google-pay"></i></a>
                 <a href="#" target="_blank"><i class="fa fa-credit-card"></i></a>
@@ -81,6 +76,131 @@
                     <br> Rentals may be returned to either Scoots location.
                 </p>
             </div>
+
+            <div class="reservationform">
+                <form method="get" action="confermation.html">
+                    <div class="section">
+                        <h2>Reservation Info</h2>
+                        <div class="row">
+                            <div class="col-25">
+                                <label for="date">Date</label>
+                            </div>
+                            <div class="col-75">
+                                <input type=date id="date" name="date">
+                            </div>
+                        </div>
+    
+                        <div class="row">
+                            <div class="col-25">
+                                <label for="type">Time</label>
+                            </div>
+                            <div class="col-75">
+                                <select id="type" name="type">
+                                    <option value="morning">8:00am - 12:00pm</option>
+                                    <option value="afternoon">1:00pm - 5:00pm</option>
+                                    <option value="Other">Other</option>
+                                </select>
+                            </div>
+                        </div>
+    
+                        <div class="row">
+                            <div class="col-25">
+                                <label for="type">Type</label>
+                            </div>
+                            <div class="col-75">
+                                    <input type="checkbox" id="Metro" name="type" value="Metro">
+                                    <label for="Metro">Honda Metro Scooter</label><br>
+                                    <input type="checkbox" id="Dio" name="type" value="Dio">
+                                    <label for="Dio">Honda Dio Scooter</label><br>
+                                    <input type="checkbox" id="PCX150" name="type" value="PCX150">
+                                    <label for="PCX150">Honda PCX150 Scooter</label><br>
+                                    <input type="checkbox" id="Pioneer" name="type" value="Pioneer">
+                                    <label for="Pioneer">Honda Pioneer ATV</label><br>
+                                    <input type="checkbox" id="4door" name="type" value="4door">
+                                    <label for="4door">Jeep Wrangler - 4 door with a/c</label><br>
+                                    <input type="checkbox" id="2door" name="type" value="2door">
+                                    <label for="2door">Jeep Wrangler - 2 door</label>                                               
+                            </div>
+                        </div>
+    
+    
+                    </div>
+    
+                    <div class="section">
+                        <h2>User Info</h2>
+                        <div class="row">
+                            <div class="col-25">
+                                <label for="fname">Full Name</label>
+                            </div>
+                            <div class="col-75">
+                                <input type="text" id="fname" name="fullname" placeholder="Enter full name">
+                            </div>
+                        </div>
+    
+                        <div class="row">
+                            <div class="col-25">
+                                <label for="email">Email Address</label>
+                            </div>
+                            <div class="col-75">
+                                <input type="email" id="email" name="email" placeholder="example@gmail.com">
+                            </div>
+                        </div>
+    
+                        <div class="row">
+                            <div class="col-25">
+                                <label for="phone">Phone Number</label>
+                            </div>
+                            <div class="col-75">
+                                <input type=tel id="phone" name="phonenumber" placeholder="111-222-3333">
+                            </div>
+                        </div>
+    
+                        <div class="row">
+                            <div class="col-25">
+                                <label for="country">Country</label>
+                            </div>
+                            <div class="col-75">
+                                <input type="text" id="country" name="country" placeholder="Enter your home country">
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="section">
+                        <h2>Additional Info</h2>
+    
+                        <div class="row">
+                            <div class="col-25">
+                                <label for="cruise">Cruise Line</label>
+                            </div>
+                            <div class="col-75">
+                                <input type="radio" id="cruise1" name="cruise1" value="Bike">
+                                <label for="cruise1"> Carnival</label><br>
+                                <input type="radio" id="cruise2" name="cruise2" value="Car">
+                                <label for="cruise2"> Norwegian</label><br>
+                                <input type="radio" id="cruise3" name="cruise3" value="Boat">
+                                <label for="cruise3"> Royal Caribbean</label><br>
+                                <input type="radio" id="cruise3" name="cruise3" value="Boat">
+                                <label for="cruise3"> Celebrity</label>
+                            </div>
+                        </div>
+    
+                        <div class="row">
+                            <div class="col-25">
+                                <label for="comments">Comments</label>
+                            </div>
+                            <div class="col-75">
+                                <textarea id="comments" name="comments" placeholder="any additional comments..."
+                                    style="height:200px"></textarea>
+                            </div>
+                        </div>
+                        <div class="clearfix">
+                            <input type="submit" value="Reserve Now">
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            
 
 
             <Section class="socialicons">

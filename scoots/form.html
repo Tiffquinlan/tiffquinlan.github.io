@@ -17,7 +17,6 @@
 <body>
 
     <main>
-        <h1>Reserve</h1>
         <div class="contactform">
             <form method="get" action="thanks.html">
                 <div class="section">
@@ -33,16 +32,38 @@
 
                     <div class="row">
                         <div class="col-25">
-                            <label for="type">Reservation Type</label>
+                            <label for="type">Time</label>
                         </div>
                         <div class="col-75">
                             <select id="type" name="type">
-                                <option value="Scooter">Scooter</option>
-                                <option value="ATV">ATV</option>
-                                <option value="Jeep">Jeep</option>
+                                <option value="morning">8:00am - 12:00pm</option>
+                                <option value="afternoon">1:00pm - 5:00pm</option>
+                                <option value="Other">Other</option>
                             </select>
                         </div>
                     </div>
+
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="type">Type</label>
+                        </div>
+                        <div class="col-75">
+                                <input type="checkbox" id="Metro" name="type" value="Metro">
+                                <label for="Metro">Honda Metro Scooter</label><br>
+                                <input type="checkbox" id="Dio" name="type" value="Dio">
+                                <label for="Dio">Honda Dio Scooter</label><br>
+                                <input type="checkbox" id="PCX150" name="type" value="PCX150">
+                                <label for="PCX150">Honda PCX150 Scooter</label><br>
+                                <input type="checkbox" id="Pioneer" name="type" value="Pioneer">
+                                <label for="Pioneer">Honda Pioneer ATV</label><br>
+                                <input type="checkbox" id="4door" name="type" value="4door">
+                                <label for="4door">Jeep Wrangler - 4 door with a/c</label><br>
+                                <input type="checkbox" id="2door" name="type" value="2door">
+                                <label for="2door">Jeep Wrangler - 2 door</label>                                               
+                        </div>
+                    </div>
+
+
                 </div>
 
                 <div class="section">
@@ -55,6 +76,7 @@
                             <input type="text" id="fname" name="fullname" placeholder="Enter full name">
                         </div>
                     </div>
+
                     <div class="row">
                         <div class="col-25">
                             <label for="email">Email Address</label>
@@ -63,6 +85,7 @@
                             <input type="email" id="email" name="email" placeholder="example@gmail.com">
                         </div>
                     </div>
+
                     <div class="row">
                         <div class="col-25">
                             <label for="phone">Phone Number</label>
@@ -71,6 +94,7 @@
                             <input type=tel id="phone" name="phonenumber" placeholder="111-222-3333">
                         </div>
                     </div>
+
                     <div class="row">
                         <div class="col-25">
                             <label for="zip">Zip Code</label>
@@ -80,8 +104,26 @@
                         </div>
                     </div>
                 </div>
+
                 <div class="section">
                     <h2>Additional Info</h2>
+
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="cruise">Cruise Line</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="radio" id="cruise1" name="cruise1" value="Bike">
+                            <label for="cruise1"> Carnival</label><br>
+                            <input type="radio" id="cruise2" name="cruise2" value="Car">
+                            <label for="cruise2"> Norwegian</label><br>
+                            <input type="radio" id="cruise3" name="cruise3" value="Boat">
+                            <label for="cruise3"> Royal Caribbean</label><br>
+                            <input type="radio" id="cruise3" name="cruise3" value="Boat">
+                            <label for="cruise3"> Celebrity</label>
+                        </div>
+                    </div>
+
                     <div class="row">
                         <div class="col-25">
                             <label for="comments">Comments</label>

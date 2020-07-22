@@ -15,10 +15,16 @@ header, nav, main, footer {
     grid-template-columns: 1fr 1fr;
 }
 
+.col1{
+    display: grid;
+    grid-template-columns: auto 50%;
+}
+
 .col2{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 175px auto;
 }
+
 
 .phone{
     display: none;
@@ -88,6 +94,15 @@ nav ul {
     /* margin-left: 20px; */
 }
 
+/* ----------- Table ----------- */
+
+
+
+.chart {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+
+
 /* ---------cards--------- */
 .cards{
     display: grid;
@@ -102,18 +117,14 @@ nav ul {
   }
 
 /*----------- FOURM --------------*/
-.stormform{
-    margin: auto;
-    width: 60%;
-    }
 
 
 input[type=text], input[type=number], input[type=tel], input[type=email]{
-    width: 70%;
+    width: 100%;
   }
 
 textarea {
-    width: 70%;
+    width: 100%;
   }
 
 
