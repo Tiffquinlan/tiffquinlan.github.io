@@ -442,6 +442,11 @@ nav ul li.active a {
   color: #e5a110; }
 
 /*----------- MAIN --------------*/
+#special {
+  font-family: 'Coda Caption', sans-serif;
+  font-size: 2.5rem;
+  text-align: center; }
+
 section.hero {
   position: relative; }
 
@@ -767,8 +772,8 @@ footer a {
   .colunms {
     column-count: 3; }
 
-  .advertisement {
-    /* margin-left: 20px; */ }
+  .article {
+    margin: 20px; }
 
   /* ----------- Table ----------- */
   .chart {
@@ -819,6 +824,9 @@ footer a {
     margin: auto; }
 
   /*----------- BODY --------------*/
+  body {
+    font-size: 20px; }
+
   /*----------- HEADER --------------*/
   header img {
     width: 180px; }
@@ -844,7 +852,6 @@ footer a {
   #weatherforecast {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr; }
 
-  /* ***Cards****/
   /*----------- ITEMS --------------*/
   .items {
     grid-template-columns: 1fr 1fr 1fr;

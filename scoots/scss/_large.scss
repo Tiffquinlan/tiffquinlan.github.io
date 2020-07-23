@@ -8,7 +8,9 @@
 
 /*----------- BODY --------------*/
 
-
+body {
+  font-size: 20px;
+}
 
 /*----------- HEADER --------------*/
 
@@ -45,10 +47,6 @@ div#gallerywrapper{
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
 
-/* ***Cards****/
-// .cards {
-//  grid-template-columns: 1fr 1fr 1fr;
-//   }
 
 /*----------- ITEMS --------------*/
   .items{
