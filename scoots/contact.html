@@ -67,18 +67,18 @@
                             <div class="section">
                                 <div class="row">
                                     <div class="col-25">
-                                        <label for="name">Name</label>
+                                        <required><label for="name">Name *</label></required>
                                     </div>
                                     <div class="col-75">
-                                        <input type="text" id="name" name="name" placeholder="Enter name">
+                                        <input type="text" id="name" name="name" placeholder="Enter name" required>
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="col-25">
-                                        <label for="email">Email Address</label>
+                                        <label for="email">Email Address *</label>
                                     </div>
                                     <div class="col-75">
-                                        <input type="email" id="email" name="email" placeholder="example@gmail.com">
+                                        <input type="email" id="email" name="email" placeholder="example@gmail.com" required>
                                     </div>
                                 </div>
                                 <div class="row">
@@ -93,6 +93,7 @@
                                 <div class="clearfix">
                                     <input type="submit" value="Send Email">
                                 </div>
+                                <p>* informtion is required</p>
                             </div>
                         </form>
                     </div>
