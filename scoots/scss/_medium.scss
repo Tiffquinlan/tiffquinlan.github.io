@@ -102,6 +102,27 @@ nav ul {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   }
 
+/* -----------  Weather  ---------- */
+.weatherReport {
+    margin: 20px;
+    padding: 10px;
+    background-color: #ccc;
+}
+
+.forecast{
+    width: 80%; 
+    margin: auto;
+}
+
+#weatherforecast{
+    .card{
+        width: 18%;
+    }
+    .card img{
+        width: 70%;
+    }
+}
+
 
 /* ---------cards--------- */
 .cards{

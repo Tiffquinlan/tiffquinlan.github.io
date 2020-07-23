@@ -512,6 +512,20 @@ main {
 .chart tr:hover {
   background-color: #ddd; }
 
+/* -----------  Weather  ---------- */
+.weatherReport {
+  margin: 20px;
+  padding: 10px;
+  background-color: #ccc; }
+
+#weatherforecast {
+  display: flex; }
+  #weatherforecast .card {
+    width: 18%; }
+  #weatherforecast .card img {
+    width: 100%;
+    height: auto; }
+
 /* --------- Cards --------- */
 .cards {
   display: grid;
@@ -778,6 +792,21 @@ footer a {
   /* ----------- Table ----------- */
   .chart {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); }
+
+  /* -----------  Weather  ---------- */
+  .weatherReport {
+    margin: 20px;
+    padding: 10px;
+    background-color: #ccc; }
+
+  .forecast {
+    width: 80%;
+    margin: auto; }
+
+  #weatherforecast .card {
+    width: 18%; }
+  #weatherforecast .card img {
+    width: 70%; }
 
   /* ---------cards--------- */
   .cards {

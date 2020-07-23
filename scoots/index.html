@@ -9,8 +9,7 @@
     <meta name="author" content="Tiffany Quinlan" />
     <link rel="shortcut icon" href="images/favicon.ico">
     <link rel="stylesheet" href="css/styles.css">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Coda+Caption:wght@800&family=Noto+Sans+HK:wght@400;700&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Coda+Caption:wght@800&family=Noto+Sans+HK:wght@400;700&display=swap"
         rel="stylesheet">
     <script src="https://kit.fontawesome.com/53224be697.js" crossorigin="anonymous"></script>
 
@@ -76,7 +75,7 @@
 
             <div class="advertisement">
                 <h1>Cozumel Rentals</h1>
-                <a href="#" class="button">Reserve Now</a>
+                <a href="reservations.html" class="button">Reserve Now</a>
                 <h2>Rentals avalible starting at $29.99 a day</h2>
             </div>
             <section class="cards">
@@ -85,23 +84,39 @@
                     <h1>Rentals</h1>
                     <h3>half day or full day</h3>
                     <p>Scooters, ATV's and Jeeps<br> starting at $29.99 a day</p>
-                    <p><button>Rent Now</button></p>
+                    <a href="rentals.html"><p><button>Explore Rentals</button></p></a>
                 </div>
                 <div class="card">
                     <img src="images/Cozumel/atvonbeach.jpg" alt="ATV">
                     <h1>ATV</h1>
-                    <p class="price">$39.99 / Day</p>
+                    <p class="price">$70 / Day</p>
                     <p>check out more details by clicking below</p>
-                    <p><button>ATV Rentals</button></p>
+                    <a href="rentals.html"><p><button>ATV Rentals</button></p></a>
                 </div>
                 <div class="card">
                     <img src="images/Cozumel/roadtobeach.jpg" alt="Jeep">
                     <h1>Tours</h1>
-                    <p class="price">$24.00</p>
+                    <p class="price">$40.00</p>
                     <p>Enjoy Cozumel Island with a group or individual guide</p>
-                    <p><button>Schedule Tour</button></p>
+                    <a href="tours.html"><p><button>Schedule Tour</button></p></a>
                 </div>
             </section>
+
+            <section class="weatherReport">
+                <h2>Weather Summary</h2>
+                <h3>Cozumel, MX</h3>
+                <p>Currently: <span id="current-weather"></span></p>
+                <p>High: <span id="high-temp"></span> &deg;F </p>
+                <p>Wind Chill: <span id="wind-chill"></span></p>
+                <p>Humidity: <span id="humidity"></span> % </p>
+                <p>Wind Speed: <span id="wind-speed"></span> mph </p>
+            </section>
+        
+            <div class="forecast">
+                <h2>Five Day Forcast</h2>
+                <section id="weatherforecast">
+                </section>
+            </div>
 
             <h1>Come see us! </h1>
             <section class="contact">
@@ -157,5 +172,6 @@
         </footer>
     </div>
     <script src="js/javascript.js"></script>
+    <script src="js/weather.js"></script>
 
 </body>
